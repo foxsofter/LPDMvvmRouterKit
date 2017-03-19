@@ -1,0 +1,6 @@
+framework module LPDMvvmRouterKit {
+  umbrella header "LPDMvvmRouterKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

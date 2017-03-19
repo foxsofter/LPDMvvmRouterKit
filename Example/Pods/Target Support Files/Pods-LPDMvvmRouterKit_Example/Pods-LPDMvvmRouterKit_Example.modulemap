@@ -1,0 +1,6 @@
+framework module Pods_LPDMvvmRouterKit_Example {
+  umbrella header "Pods-LPDMvvmRouterKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

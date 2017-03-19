@@ -1,0 +1,70 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - LPDAdditionsKit (0.1.2)
+  - LPDCollectionViewKit (0.1.7):
+    - ReactiveObjC
+  - LPDControlsKit (0.1.4):
+    - LPDAdditionsKit
+    - Masonry
+    - SDVersion
+  - LPDMvvmKit (0.8.6):
+    - LPDAdditionsKit
+    - LPDCollectionViewKit
+    - LPDControlsKit
+    - LPDNetworkingKit
+    - LPDTableViewKit
+    - MJRefresh
+    - ReactiveObjC
+  - LPDMvvmRouterKit (0.1.0):
+    - LPDMvvmKit
+  - LPDNetworkingKit (0.2.4):
+    - AFNetworking
+    - ReactiveObjC
+    - YYModel
+  - LPDTableViewKit (0.2.6):
+    - ReactiveObjC
+  - Masonry (1.0.2)
+  - MJRefresh (3.1.12)
+  - ReactiveObjC (2.1.2)
+  - SDVersion (4.0.1)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - LPDMvvmRouterKit (from `../`)
+
+EXTERNAL SOURCES:
+  LPDMvvmRouterKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  LPDAdditionsKit: 68234d5791daf8d4272ccd4c06eaf22ab09b2809
+  LPDCollectionViewKit: a3b501eae7617f9cf67f5a9b358e32b1f31219ae
+  LPDControlsKit: 85d97bb3ac1f84aa8ff74f33f838493f16e0ba8f
+  LPDMvvmKit: 3d8387fd32edc567d0b2183122017a648a8711bc
+  LPDMvvmRouterKit: aff506f3d52fe506659596cb9e9fd5a65027a5a6
+  LPDNetworkingKit: afdec5c9ed7f410e5b3b4de9252b6c5c8f25fe07
+  LPDTableViewKit: e082367c33e2983ff7c0c74ae368a341912bd632
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  ReactiveObjC: 7b6782ae39f9ac0f57205c3b0c0b69b9dd7048c0
+  SDVersion: 6afaf76a7e71d620cc2039f96d4bff3064c129ec
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 0eb0b6f349559d917e1af9b43b47574e2973f891
+
+COCOAPODS: 1.2.0

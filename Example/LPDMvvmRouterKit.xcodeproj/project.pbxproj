@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		08BD186D3A6E0CA2237F8151 /* Pods-LPDMvvmRouterKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPDMvvmRouterKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPDMvvmRouterKit_Tests/Pods-LPDMvvmRouterKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1038047803C857E699CBFEFA /* LPDMvvmRouterKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LPDMvvmRouterKit.podspec; path = ../LPDMvvmRouterKit.podspec; sourceTree = "<group>"; };
-		22F19FCB56F9366AF90D06AC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1038047803C857E699CBFEFA /* LPDMvvmRouterKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LPDMvvmRouterKit.podspec; path = ../LPDMvvmRouterKit.podspec; sourceTree = "<group>"; };
+		22F19FCB56F9366AF90D06AC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2BD42897101913EFAC508FC6 /* Pods_LPDMvvmRouterKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPDMvvmRouterKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5885CADA6FACF9B03DD1EF99 /* Pods-LPDMvvmRouterKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPDMvvmRouterKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPDMvvmRouterKit_Example/Pods-LPDMvvmRouterKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5FAC080838FDB1605814D4D0 /* Pods_LPDMvvmRouterKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPDMvvmRouterKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +65,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8914AA5D21DD703F3C7832A4 /* Pods-LPDMvvmRouterKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPDMvvmRouterKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPDMvvmRouterKit_Example/Pods-LPDMvvmRouterKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8CA3CB9E0A3FFF8F4C4A1984 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8CA3CB9E0A3FFF8F4C4A1984 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B5128A4776CCDE15FE258AD5 /* Pods-LPDMvvmRouterKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPDMvvmRouterKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPDMvvmRouterKit_Tests/Pods-LPDMvvmRouterKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* Example for LPDMvvmRouterKit */,
+				6003F593195388D20070C39A /* Example */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
@@ -129,7 +129,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6003F593195388D20070C39A /* Example for LPDMvvmRouterKit */ = {
+		6003F593195388D20070C39A /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				6003F59C195388D20070C39A /* LPDAppDelegate.h */,
@@ -141,7 +141,7 @@
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
-			name = "Example for LPDMvvmRouterKit";
+			name = Example;
 			path = LPDMvvmRouterKit;
 			sourceTree = "<group>";
 		};
