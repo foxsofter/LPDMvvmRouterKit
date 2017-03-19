@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LPDMvvmRouterKit_Example' do
+  pod 'LPDMvvmRouterKit', :path => '../'
+
+  target 'LPDMvvmRouterKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
