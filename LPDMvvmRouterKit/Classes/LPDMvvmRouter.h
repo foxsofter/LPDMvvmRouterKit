@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "LPDEventProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
  action —— scheme://[viewModel]/[action]?[parameters]
  */
 @interface LPDMvvmRouter : NSObject
+
++ (instancetype)sharedInstance;
 
 /**
  Inter-app invoke.
@@ -53,16 +54,6 @@ NS_ASSUME_NONNULL_BEGIN
  @return YES if successfully handled or NO if failed for some reason.
  */
 - (BOOL)performActionWithUrl:(NSURL *)url parameters:(nullable  NSDictionary<NSString *, id> *)parameters completion:(nullable void(^)(__nullable id x))completion;
-
-
-/**
- Description
-
- @param event event description
- */
-- (void)sendEvent:(id<LPDEventProtocol>)event;
-
-+ (instancetype)sharedInstance;
 
 @end
 

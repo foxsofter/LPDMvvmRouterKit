@@ -59,11 +59,11 @@
 }
 
 - (NSString *)action {
-  return self.components.path;
+  return [self.components.path substringFromIndex:1];
 }
 
 - (void)setAction:(NSString *)action {
-  self.components.path = action;
+  self.components.path = [NSString stringWithFormat:@"/%@", action];
 }
 
 - (NSDictionary *)parameters {

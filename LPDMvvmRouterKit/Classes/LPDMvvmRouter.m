@@ -9,12 +9,10 @@
 #import "LPDMvvmRouter.h"
 #import <objc/runtime.h>
 #import <LPDMvvmKit/LPDMvvmKit.h>
-#import "LPDConstant.h"
 #import "UIViewController+LPDFinder.h"
 #import "NSObject+LPDPerformAction.h"
 #import "LPDRouteURL.h"
 #import "LPDRuntime.h"
-#import "LPDEventHandleProtocol.h"
 
 @interface LPDMvvmRouter ()
 
@@ -22,9 +20,10 @@
 @property (nonatomic, strong) NSMutableDictionary *viewModelObjects;
 
 @property (nonatomic, copy) NSDictionary *navigationActions;
-@property (nonatomic, strong) NSMutableArray *moduleObjects;
 
 @end
+
+static NSString *const kLPDViewModelSuffix = @"ViewModel";
 
 @implementation LPDMvvmRouter
 
@@ -65,7 +64,6 @@ static NSArray *allSchemes = nil;
                                 @"dismiss" : @"dismissNavigationViewModelAnimated:completion:", };
     self.viewModelClasses = [NSMutableDictionary dictionary];
     self.viewModelObjects = [NSMapTable strongToWeakObjectsMapTable];
-    [self loadModules];
     [self loadViewModels];
   }
   return self;
@@ -94,7 +92,7 @@ static NSArray *allSchemes = nil;
                   parameters:(NSDictionary<NSString *,id> *)parameters
                   completion:(void(^)(id x))completion {
   LPDRouteURL *routeURL = [LPDRouteURL routerURLWithURL:url];
-  NSString *viewModelIdentifier = [NSString stringWithFormat:@"%@%@%@", routeURL.scheme, routeURL.viewModel, kLPDViewModelSuffix];
+  NSString *viewModelIdentifier = [NSString stringWithFormat:@"%@%@%@", routeURL.scheme, routeURL.viewModel, kLPDViewModelSuffix].lowercaseString;
   Class viewModelClass = [self.viewModelClasses objectForKey:viewModelIdentifier];
   if (!viewModelClass) {
     return NO;
@@ -123,6 +121,8 @@ static NSArray *allSchemes = nil;
       animated = [allParameters objectForKey:@"animated"];
       if (animated) {
         [allParameters removeObjectForKey:@"animated"];
+      } else {
+        animated = @YES;
       }
     }
     
@@ -174,27 +174,12 @@ static NSArray *allSchemes = nil;
   return YES;
 }
 
-- (void)sendEvent:(id<LPDEventProtocol>)event {
-  SEL eventSelector = NSSelectorFromString(event.eventSelector);
-  [self.moduleObjects enumerateObjectsUsingBlock:^(id<LPDEventHandleProtocol>  _Nonnull module, NSUInteger idx,  BOOL * _Nonnull stop) {
-    if ([module respondsToSelector:eventSelector]) {
-      if (event.async) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-          [module performSelector:eventSelector withObject:event];
-        });
-      } else {
-        [module performSelector:eventSelector withObject:event];
-      }
-    }
-  }];
-}
-
-
 #pragma mark - private methods
 
 - (void)loadViewModels {
   NSArray *viewModelClasses = getClassesMatching(^BOOL(Class cls) {
-    return class_conformsToProtocol(cls, @protocol(LPDViewModelProtocol));
+    return class_conformsToProtocol(cls, @protocol(LPDViewModelProtocol))
+    || [NSStringFromClass(cls) hasSuffix:kLPDViewModelSuffix];
   });
   [viewModelClasses enumerateObjectsUsingBlock:^(Class cls, NSUInteger idx, BOOL * _Nonnull stop) {
     NSString *viewModelIdentifier = NSStringFromClass(cls).lowercaseString;
@@ -212,15 +197,6 @@ static NSArray *allSchemes = nil;
     return nil;
   }
   return topNavigationController.viewModel;
-}
-
-- (void)loadModules {
-  NSArray *moduleClasses = getClassesMatching(^BOOL(Class cls) {
-    return [cls conformsToProtocol:@protocol(LPDEventHandleProtocol)];
-  });
-  [moduleClasses enumerateObjectsUsingBlock:^(Class  cls, NSUInteger idx, BOOL * _Nonnull stop) {
-    [self.moduleObjects addObject:[[cls alloc] init]];
-  }];
 }
 
 @end

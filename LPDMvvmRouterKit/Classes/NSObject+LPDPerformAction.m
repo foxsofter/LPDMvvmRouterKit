@@ -9,7 +9,7 @@
 #import "NSObject+LPDPerformAction.h"
 #import <objc/runtime.h>
 
-static const char *cNumberTypes = "islqISLQfdb";
+static const char *cNumberTypes = "islqISLQfdbB";
 static inline BOOL isCharArrayContains(const char *c, const char *cArray);
 static inline void getTypeValueByNSString(NSString *inString, const char *typeCode, void(^resultBlock)(void *));
 static inline void getTypeValueByNSValue(NSValue *inValue, const char *typeCode, void(^resultBlock)(void *));

@@ -7,12 +7,18 @@
 //
 
 #import "LPDAppDelegate.h"
+#import "LPDSomeViewModel.h"
 
 @implementation LPDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    LPDSomeViewModel *vm = [[LPDSomeViewModel alloc] init];
+    LPDNavigationViewModel *nvm = [[LPDNavigationViewModel alloc] initWithRootViewModel:vm];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [LPDViewControllerFactory viewControllerForViewModel:nvm];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
