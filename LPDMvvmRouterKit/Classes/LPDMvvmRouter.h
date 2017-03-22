@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "LPDRouteURL.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Inter-app invoke.
  
- @param url scheme://[viewModel]/[action]?[parameters]
+ @param url scheme://[...][viewModel]/[action]?[parameters]
  @param options dictionary of URL handling options
  @return YES if successfully handled or NO if failed for some reason.
  */
@@ -34,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param url scheme://[viewModel]/[action]?[parameters]
  @return YES if successfully handled or NO if failed for some reason.
  */
-- (BOOL)performActionWithUrl:(NSURL *)url;
+- (BOOL)performActionWithUrl:(LPDRouteURL *)url;
 
 /**
  In-app invoke.
@@ -43,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param completion callback block, the parameter x represents return value of action.
  @return YES if successfully handled or NO if failed for some reason.
  */
-- (BOOL)performActionWithUrl:(NSURL *)url completion:(nullable void(^)(__nullable id x))completion;
+- (BOOL)performActionWithUrl:(LPDRouteURL *)url completion:(nullable void(^)(__nullable id x))completion;
 
 /**
  In-app invoke.
@@ -53,7 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param completion callback block, the parameter x represents return value of action.
  @return YES if successfully handled or NO if failed for some reason.
  */
-- (BOOL)performActionWithUrl:(NSURL *)url parameters:(nullable  NSDictionary<NSString *, id> *)parameters completion:(nullable void(^)(__nullable id x))completion;
+- (BOOL)performActionWithUrl:(LPDRouteURL *)url parameters:(nullable  NSDictionary<NSString *, id> *)parameters completion:(nullable void(^)(__nullable id x))completion;
 
 @end
 

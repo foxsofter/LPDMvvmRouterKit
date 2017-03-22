@@ -92,4 +92,12 @@
   self.components.queryItems = [mutableQueryItems copy];
 }
 
+- (NSString *)debugDescription {
+  return [self.components debugDescription];
+}
+
+- (NSString *)description {
+  return [self.components description];
+}
+
 @end

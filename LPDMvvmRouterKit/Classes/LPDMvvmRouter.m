@@ -11,7 +11,6 @@
 #import <LPDMvvmKit/LPDMvvmKit.h>
 #import "UIViewController+LPDFinder.h"
 #import "NSObject+LPDPerformAction.h"
-#import "LPDRouteURL.h"
 #import "LPDRuntime.h"
 
 @interface LPDMvvmRouter ()
@@ -76,32 +75,35 @@ static NSArray *allSchemes = nil;
   if (![allSchemes containsObject:url.scheme]) {
     return NO;
   }
-
-  return [self performActionWithUrl:url parameters:options completion:nil];
+  NSRange range = [url.absoluteString rangeOfString:@"://"];
+  NSString *urlString = [url.absoluteString substringFromIndex:range.length + range.location];
+  range = [urlString rangeOfString:@"/"];
+  urlString = [urlString stringByReplacingCharactersInRange:range withString:@"://"];
+  LPDRouteURL *routeURL = [LPDRouteURL routerURLWithString:urlString];
+  return [self performActionWithUrl:routeURL parameters:options completion:nil];
 }
 
-- (BOOL)performActionWithUrl:(NSURL *)url {
+- (BOOL)performActionWithUrl:(LPDRouteURL *)url {
   return [self performActionWithUrl:url completion:nil];
 }
 
-- (BOOL)performActionWithUrl:(NSURL *)url completion:(void (^)(id))completion {
+- (BOOL)performActionWithUrl:(LPDRouteURL *)url completion:(void (^)(id))completion {
   return [self performActionWithUrl:url parameters:nil completion:completion];
 }
 
-- (BOOL)performActionWithUrl:(NSURL *)url
+- (BOOL)performActionWithUrl:(LPDRouteURL *)url
                   parameters:(NSDictionary<NSString *,id> *)parameters
                   completion:(void(^)(id x))completion {
-  LPDRouteURL *routeURL = [LPDRouteURL routerURLWithURL:url];
-  NSString *viewModelIdentifier = [NSString stringWithFormat:@"%@%@%@", routeURL.scheme, routeURL.viewModel, kLPDViewModelSuffix].lowercaseString;
+  NSString *viewModelIdentifier = [NSString stringWithFormat:@"%@%@%@", url.scheme, url.viewModel, kLPDViewModelSuffix].lowercaseString;
   Class viewModelClass = [self.viewModelClasses objectForKey:viewModelIdentifier];
   if (!viewModelClass) {
     return NO;
   }
-  NSMutableDictionary *allParameters = [NSMutableDictionary dictionaryWithDictionary:routeURL.parameters];
+  NSMutableDictionary *allParameters = [NSMutableDictionary dictionaryWithDictionary:url.parameters];
   if (parameters) {
     [allParameters addEntriesFromDictionary:parameters];
   }
-  NSString *action = [self.navigationActions objectForKey:routeURL.action];
+  NSString *action = [self.navigationActions objectForKey:url.action];
   if (action) {
     NSObject *viewModel = [[viewModelClass alloc] init];
     NSPointerArray *viewModels = [self.viewModelObjects objectForKey:viewModelIdentifier];
@@ -127,19 +129,19 @@ static NSArray *allSchemes = nil;
     }
     
     [viewModel setIvarValues:allParameters];
-    if ([routeURL.action isEqualToString:@"push"]) {
+    if ([url.action isEqualToString:@"push"]) {
       NSDictionary *params = @{ @"pushViewModel" : viewModel, @"animated" : animated };
       [navigationViewModel performAction:action parameters:params completion:nil];
-    } else if ([routeURL.action isEqualToString:@"pop"]) {
+    } else if ([url.action isEqualToString:@"pop"]) {
       NSDictionary *params = @{ @"popViewModelAnimated" : animated };
       [navigationViewModel performAction:action parameters:params completion:nil];
-    } else if ([routeURL.action isEqualToString:@"popto"]) {
+    } else if ([url.action isEqualToString:@"popto"]) {
       NSDictionary *params = @{ @"popToViewModel" : viewModel, @"animated" : animated };
       [navigationViewModel performAction:action parameters:params completion:nil];
-    } else if ([routeURL.action isEqualToString:@"poptoroot"]) {
+    } else if ([url.action isEqualToString:@"poptoroot"]) {
       NSDictionary *params = @{ @"popToRootViewModelAnimated" : animated };
       [navigationViewModel performAction:action parameters:params completion:nil];
-    } else if ([routeURL.action isEqualToString:@"present"]) {
+    } else if ([url.action isEqualToString:@"present"]) {
       NSDictionary *params = nil;
       id presentNavigationViewModel = [[navigationViewModel.class alloc] initWithRootViewModel:viewModel];
       if (completion) {
@@ -151,7 +153,7 @@ static NSArray *allSchemes = nil;
                     @"animated" : animated };
       }
       [navigationViewModel performAction:action parameters:params completion:nil];
-    } else if ([routeURL.action isEqualToString:@"dismiss"]) {
+    } else if ([url.action isEqualToString:@"dismiss"]) {
       NSDictionary *params = nil;
       if (completion) {
         params = @{ @"dismissNavigationViewModelAnimated" : animated,
@@ -166,7 +168,7 @@ static NSArray *allSchemes = nil;
     if (viewModels) {
       [viewModels compact];
       [[viewModels allObjects] enumerateObjectsUsingBlock:^(NSObject * _Nonnull viewModel, NSUInteger idx, BOOL * _Nonnull stop) {
-        [viewModel performAction:routeURL.action parameters:allParameters completion:completion];
+        [viewModel performAction:url.action parameters:allParameters completion:completion];
       }];
     }
   }

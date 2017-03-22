@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -35,10 +35,24 @@
                         <action selector="presentViewModel:" destination="-1" eventType="touchUpInside" id="Rng-Vk-tgV"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syl-NB-q2H">
+                    <rect key="frame" x="16" y="173" width="343" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="NTQ-F1-Eyv"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="lwV-9f-exE"/>
+                    </constraints>
+                    <state key="normal" title="open url"/>
+                    <connections>
+                        <action selector="openUrl:" destination="-1" eventType="touchUpInside" id="A9R-zl-sDU"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="pUn-xW-sLe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="A4Y-sr-EzR"/>
+                <constraint firstItem="Syl-NB-q2H" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="GsU-ZN-PrX"/>
+                <constraint firstItem="Syl-NB-q2H" firstAttribute="top" secondItem="k5h-uy-rmz" secondAttribute="bottom" constant="16" id="HQG-mS-CEP"/>
+                <constraint firstAttribute="trailing" secondItem="Syl-NB-q2H" secondAttribute="trailing" constant="16" id="M0Q-eW-SwN"/>
                 <constraint firstItem="k5h-uy-rmz" firstAttribute="top" secondItem="pUn-xW-sLe" secondAttribute="bottom" constant="25" id="VTO-nr-jWg"/>
                 <constraint firstItem="pUn-xW-sLe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="52" id="kFs-nJ-6cO"/>
                 <constraint firstAttribute="trailing" secondItem="k5h-uy-rmz" secondAttribute="trailing" constant="16" id="wSi-1M-Joz"/>
