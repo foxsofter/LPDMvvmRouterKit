@@ -21,6 +21,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		8EC066731E83C9FA00522949 /* LPDTestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC066721E83C9FA00522949 /* LPDTestModule.m */; };
 		8EFF92521E7FD8F500C7B032 /* LPDSomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF924D1E7FD8F500C7B032 /* LPDSomeViewController.m */; };
 		8EFF92531E7FD8F500C7B032 /* LPDSomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF924E1E7FD8F500C7B032 /* LPDSomeViewModel.m */; };
 		8EFF92541E7FD8F500C7B032 /* LPDSomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF92511E7FD8F500C7B032 /* LPDSomeViewController.xib */; };
@@ -64,6 +65,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8914AA5D21DD703F3C7832A4 /* Pods-LPDMvvmRouterKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPDMvvmRouterKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPDMvvmRouterKit_Example/Pods-LPDMvvmRouterKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8CA3CB9E0A3FFF8F4C4A1984 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8EC066711E83C9FA00522949 /* LPDTestModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDTestModule.h; sourceTree = "<group>"; };
+		8EC066721E83C9FA00522949 /* LPDTestModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDTestModule.m; sourceTree = "<group>"; };
 		8EFF924D1E7FD8F500C7B032 /* LPDSomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDSomeViewController.m; sourceTree = "<group>"; };
 		8EFF924E1E7FD8F500C7B032 /* LPDSomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDSomeViewModel.m; sourceTree = "<group>"; };
 		8EFF924F1E7FD8F500C7B032 /* LPDSomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDSomeViewModel.h; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				8EFF92501E7FD8F500C7B032 /* LPDSomeViewController.h */,
 				8EFF924D1E7FD8F500C7B032 /* LPDSomeViewController.m */,
 				8EFF92511E7FD8F500C7B032 /* LPDSomeViewController.xib */,
+				8EC066711E83C9FA00522949 /* LPDTestModule.h */,
+				8EC066721E83C9FA00522949 /* LPDTestModule.m */,
 				6003F59C195388D20070C39A /* LPDAppDelegate.h */,
 				6003F59D195388D20070C39A /* LPDAppDelegate.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -403,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC066731E83C9FA00522949 /* LPDTestModule.m in Sources */,
 				6003F59E195388D20070C39A /* LPDAppDelegate.m in Sources */,
 				8EFF92521E7FD8F500C7B032 /* LPDSomeViewController.m in Sources */,
 				8EFF92531E7FD8F500C7B032 /* LPDSomeViewModel.m in Sources */,

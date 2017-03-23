@@ -19,6 +19,8 @@
 
 @end
 
+static NSString *const kLPDModuleSuffix = @"Module";
+
 @implementation LPDModuleMediator
 
 #pragma mark - life cycle
@@ -68,15 +70,16 @@
 
 - (void)loadModules {
   NSArray *moduleClasses = getClassesMatching(^BOOL(Class cls) {
-    return [cls conformsToProtocol:@protocol(LPDModuleProtocol)];
+    return [NSStringFromClass(cls) containsString:kLPDModuleSuffix] && [cls conformsToProtocol:@protocol(LPDModuleProtocol)];
   });
-  self.moduleObjects = [NSMutableDictionary dictionary];
+  self.moduleObjects = [NSMutableArray array];
   [moduleClasses enumerateObjectsUsingBlock:^(Class  cls, NSUInteger idx, BOOL * _Nonnull stop) {
     [self.moduleObjects addObject:[[cls alloc] init]];
   }];
 }
 
 - (void)observerAppLifecycle {
+  self.observers = [NSMutableArray array];
   [self.eventNotificationMaps enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSString * _Nonnull value, BOOL * _Nonnull stop) {
     id observer =
     [[NSNotificationCenter defaultCenter] addObserverForName:value object:nil queue:nil usingBlock:^(NSNotification * _Nonnull notification) {

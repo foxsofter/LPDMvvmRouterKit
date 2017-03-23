@@ -40,4 +40,9 @@
   [[LPDMvvmRouter sharedInstance] openURL:url options:nil];
 }
 
+- (IBAction)testEvent:(id)sender {
+  LPDEvent *event = [LPDEvent eventWithEventSelector:@"test:"];
+  [[LPDModuleMediator sharedInstance] sendEvent:event];
+}
+
 @end

@@ -17,6 +17,7 @@ FOUNDATION_EXPORT const unsigned char LPDMvvmRouterVersionString[];
 // In this header, you should import all the public headers of your framework
 
 #import "LPDMvvmRouter.h"
+#import "LPDModuleMediator.h"
 #import "LPDEventProtocol.h"
 #import "LPDEvent.h"
 #import "LPDModuleProtocol.h"
