@@ -26,14 +26,15 @@ static NSString *const kLPDViewModelSuffix = @"ViewModel";
 
 @implementation LPDMvvmRouter
 
-static NSArray *allSchemes = nil;
+static NSMutableArray *allSchemes = nil;
 + (NSArray *)getAllSchemes {
   if (!allSchemes) {
+    allSchemes = [NSMutableArray array];
     if([[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleURLTypes"]) {
       NSArray *urlTypes = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleURLTypes"];
       for(NSDictionary *urlType in urlTypes) {
         if(urlType[@"CFBundleURLSchemes"]) {
-          allSchemes = urlType[@"CFBundleURLSchemes"];
+          [allSchemes addObject:urlType[@"CFBundleURLSchemes"]];
         }
       }
     }
