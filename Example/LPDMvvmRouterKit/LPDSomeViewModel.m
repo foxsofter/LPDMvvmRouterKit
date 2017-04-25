@@ -10,6 +10,19 @@
 
 @implementation LPDSomeViewModel
 
+- (void)popViewModel {
+    [self.navigation popViewModelAnimated:YES];
+}
 
+- (void)popToRootViewModel {
+    [self.navigation popToRootViewModelAnimated:YES];
+}
+
+- (void)dismissViewModel {
+    [self.navigation dismissNavigationViewModelAnimated:YES
+                                             completion:^{
+                                                 
+                                             }];
+}
 
 @end

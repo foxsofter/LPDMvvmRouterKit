@@ -19,4 +19,8 @@
 
 @property (nonatomic) CGSize size;
 
+- (void)popViewModel;
+- (void)popToRootViewModel;
+- (void)dismissViewModel;
+
 @end
