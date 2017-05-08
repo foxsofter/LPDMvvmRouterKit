@@ -37,9 +37,13 @@
 }
 
 - (IBAction)presentViewModel:(id)sender {
-  [[LPDMvvmRouter sharedInstance] performActionWithUrl:[LPDRouteURL routerURLWithString:@"lpd://some/present?title=PresentSome&x=11111.11&count=3&str=fwljfwljfwl"] completion:^(id  _Nullable x) {
-    NSString *ss = x;
-  }];
+//  [[LPDMvvmRouter sharedInstance] performActionWithUrl:[LPDRouteURL routerURLWithString:@"lpd://some/present?title=PresentSome&x=11111.11&count=3&str=fwljfwljfwl"] completion:^(id  _Nullable x) {
+//    NSString *ss = x;
+//  }];
+    
+    [[LPDMvvmRouter sharedInstance] performActionWithUrl:[LPDRouteURL routerURLWithString:@"lpd://some/present"] completion:^(id  _Nullable x) {
+        NSString *ss = x;
+    }];
 }
 
 - (IBAction)dismissViewModel:(id)sender {
