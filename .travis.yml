@@ -10,7 +10,7 @@ script:
   - xcodebuild -version
   - xcodebuild -showsdks
 
-  - pod lib lint --allow-warnings --no-subspecs
+  - pod lib lint --allow-warnings --quick
 
 after_success:
   - sleep 3
