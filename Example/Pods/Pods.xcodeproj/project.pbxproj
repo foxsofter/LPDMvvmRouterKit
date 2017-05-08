@@ -73,6 +73,7 @@
 		179C20209D0973E8CBA943B92084D49E /* RACTupleSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = D887B351D753259E5EC8C6FADBBE1F91 /* RACTupleSequence.m */; };
 		19DE598DB7487AB2E9C550388223A4B3 /* LPDCollectionImageCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03B7A17C9AB4833A34F826284B7236 /* LPDCollectionImageCellViewModel.m */; };
 		1A07B936EEDA15F236216CB8D1B9C2C3 /* MJRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = C581DFDC367F4F7A1B5D1BC8AD54DDE4 /* MJRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A3157DF17CAC849056058153B0BBE76 /* NSObject+LPDPerformAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 06C7C15D0FED55277E9431F9F1FD0C9E /* NSObject+LPDPerformAction.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		1A548DF45A6141FEED33BAE504697295 /* LPDApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C092EFA42F1A12C54C79E11AEDE014E /* LPDApiClient.m */; };
 		1ABB35B36FF3C0D8C6636B5690A95DE2 /* UIView+LPDBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = AD74DFD6E1382CDD2882B8DC62FEA4A2 /* UIView+LPDBadge.m */; };
 		1B0BC7F95B66459C886959BE43E5D0E1 /* RACDynamicSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = FC163C83E3635351AE210BD48F97C3B6 /* RACDynamicSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -151,6 +152,7 @@
 		3C7B6969BD3B4A75E5F935124AABE932 /* UITableViewHeaderFooterView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 543DFFDF662468F1C363C68E4A6B35F4 /* UITableViewHeaderFooterView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C9E6A54FBBB2CDEFA4F0EC0B42BB596 /* RACDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EE1CEE046B4EF54244A0A95EE3EE866 /* RACDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E41EC21E44F1BF9108C9E0F31B10F46 /* LPDScrollViewControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F9802A52301E7F6C727082785E93BF5 /* LPDScrollViewControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EB07D15D75058C12D9FB3FC137D8F53 /* UIViewController+LPDFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F89215C6A7B13280EF44B56A4954C1 /* UIViewController+LPDFinder.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3F6083F0B76936E820A2F4B796500621 /* LPDCollectionCellViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDEF144766872C6311EC537E105EDF5 /* LPDCollectionCellViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F725B3B3649D4DA52313CA6EC5C8D2C /* UIView+LPDFindSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0408DE0C4F4DB74B8FEE66AA9300594 /* UIView+LPDFindSubView.m */; };
 		3F81DE78E8780D7C26E19C7CEAA6855D /* LPDEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E379928F3D4A77291073C5DB26A33B8F /* LPDEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -330,7 +332,6 @@
 		81D1FCFCC3E0FE3997C327A3814CE536 /* RACScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F1774F87862D0589549E81BF6A0036 /* RACScheduler.m */; };
 		827F8B2B525A9272D13E9CC5235C3EE2 /* NSString+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B427A622DFBB9EF464F58D7146E63A /* NSString+RACSupport.m */; };
 		82C2C7BACBCE4CE2D29DD93DC0CEA4B2 /* RACValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 034E96670D1EBC9FCB553C95EADBA1FD /* RACValueTransformer.m */; };
-		82C3A4CEA427EE99CDBC1F49BEC435F0 /* NSObject+LPDPerformAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 06C7C15D0FED55277E9431F9F1FD0C9E /* NSObject+LPDPerformAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82D554EC9FB9A62D935B6555325F5898 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB82BEBA801F2BF1DBD03BE93167636 /* Security.framework */; };
 		83240D6677A4D087A8FEC2E2D1B41E95 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3554061CD431E930FCD32878F495791 /* Masonry.framework */; };
 		83257BA1FC9F41E74193FE543992739E /* LPDViewControllerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 6857AC419E63AB75D01B92A7863A1634 /* LPDViewControllerFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -452,7 +453,6 @@
 		B3EE050A186B22A383B5BF1D6C5CA914 /* RACCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = A6778529CEA2F928FA4733BEA9B65758 /* RACCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B434315D78FEDAF28123A416D9AF305F /* UIControl+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C727AB6DA47F8D10EB53F202F86F99 /* UIControl+RACSignalSupport.m */; };
 		B47FD3C4AA736CB43A174A9DB417C9B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361AFF3648D165BFBEDE3D564F235552 /* Foundation.framework */; };
-		B4D52C87D98378A1CC1462BB76D76FDB /* UIViewController+LPDFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F89215C6A7B13280EF44B56A4954C1 /* UIViewController+LPDFinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4EA5B553279795935A8B113711F9F0D /* LPDViewModelToastProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BDCB7F730259EAF7AE2BDFB2E2A3C85 /* LPDViewModelToastProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B503B292EE17422E9463455D1C05B89E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361AFF3648D165BFBEDE3D564F235552 /* Foundation.framework */; };
 		B61B82D9DA3FABA5FEB7A4AF7E622C8B /* NSSet+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D20CE4FEF1F558763D2705D596B7991 /* NSSet+RACSequenceAdditions.m */; };
@@ -2828,8 +2828,8 @@
 				EAF423AA8C40E98E585643801E39F753 /* LPDMvvmRouterKit.h in Headers */,
 				A68004CB6E39E69EE6F016053210CB49 /* LPDRouteURL.h in Headers */,
 				6047FAC6890AFF37523A908661C49B4C /* LPDRuntime.h in Headers */,
-				82C3A4CEA427EE99CDBC1F49BEC435F0 /* NSObject+LPDPerformAction.h in Headers */,
-				B4D52C87D98378A1CC1462BB76D76FDB /* UIViewController+LPDFinder.h in Headers */,
+				1A3157DF17CAC849056058153B0BBE76 /* NSObject+LPDPerformAction.h in Headers */,
+				3EB07D15D75058C12D9FB3FC137D8F53 /* UIViewController+LPDFinder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

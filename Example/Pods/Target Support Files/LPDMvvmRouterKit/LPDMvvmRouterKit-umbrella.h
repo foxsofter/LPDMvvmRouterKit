@@ -19,8 +19,6 @@
 #import "LPDMvvmRouterKit.h"
 #import "LPDRouteURL.h"
 #import "LPDRuntime.h"
-#import "NSObject+LPDPerformAction.h"
-#import "UIViewController+LPDFinder.h"
 
 FOUNDATION_EXPORT double LPDMvvmRouterKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char LPDMvvmRouterKitVersionString[];
