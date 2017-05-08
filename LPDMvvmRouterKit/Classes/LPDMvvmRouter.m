@@ -151,7 +151,8 @@ static NSMutableArray *allSchemes = nil;
                     @"completion" : ^{ completion(nil); } };
       } else {
         params = @{ @"presentNavigationViewModel" : presentNavigationViewModel,
-                    @"animated" : animated };
+                    @"animated" : animated,
+                    @"completion" : ^{}};
       }
       [navigationViewModel performAction:action parameters:params completion:nil];
     } else if ([url.action isEqualToString:@"dismiss"]) {
@@ -160,7 +161,8 @@ static NSMutableArray *allSchemes = nil;
         params = @{ @"dismissNavigationViewModelAnimated" : animated,
                     @"completion" : ^{ completion(nil); } };
       } else {
-        params = @{ @"dismissNavigationViewModelAnimated" : animated };
+        params = @{ @"dismissNavigationViewModelAnimated" : animated,
+                      @"completion" : ^{} };
       }
       [navigationViewModel performAction:action parameters:params completion:nil];
     }
