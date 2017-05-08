@@ -1,6 +1,6 @@
 # LPDMvvmRouterKit
 
-[![CI Status](http://img.shields.io/travis/foxsofter/LPDMvvmRouterKit.svg?style=flat)](https://travis-ci.org/foxsofter/LPDMvvmRouterKit)
+[![CI Status](http://img.shields.io/travis/LPD-iOS/LPDMvvmRouterKit.svg?style=flat)](https://travis-ci.org/LPD-iOS/LPDMvvmRouterKit)
 [![Version](https://img.shields.io/cocoapods/v/LPDMvvmRouterKit.svg?style=flat)](http://cocoapods.org/pods/LPDMvvmRouterKit)
 [![License](https://img.shields.io/cocoapods/l/LPDMvvmRouterKit.svg?style=flat)](http://cocoapods.org/pods/LPDMvvmRouterKit)
 [![Platform](https://img.shields.io/cocoapods/p/LPDMvvmRouterKit.svg?style=flat)](http://cocoapods.org/pods/LPDMvvmRouterKit)
