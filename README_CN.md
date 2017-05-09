@@ -1,6 +1,6 @@
 # LPDMvvmRouterKit
 
-<p align="center">
+<p align="center">    
 
 <a href="https://travis-ci.org/LPD-iOS/LPDMvvmRouterKit"><img src="http://img.shields.io/travis/LPD-iOS/LPDMvvmRouterKit.svg?style=flat"></a>
 
@@ -33,7 +33,7 @@
 <img src="https://img.shields.io/chrome-web-store/stars/nimelepbpejjlbmoobocpfnjhihnpked.svg?colorA=a0cd34">
 
 
-</p>
+</p>    
 
 LPDMvvmRouterKit 是一个用 Objectivec-C 编写的，可用在 MVVM 框架下做路由。
 
@@ -82,7 +82,7 @@ $ pod install
 ```
 ## 快速使用
 
-#### 1. 导入 LPDMvvmRouterKit
+### 1. 导入 LPDMvvmRouterKit
 
 在你需要使用 LPDMvvmRouterKit 的地方添加如下代码引入 LPDMvvmRouterKit 模块：
 
@@ -96,7 +96,7 @@ $ pod install
 并且让 viewController 继承自 LPDViewController。
 
 
-#### 2. 创建 viewModel
+### 2. 创建 viewModel
 
 创建一个 viewModel。在viewModel的代码中添加以下的头文件：
 
@@ -106,7 +106,7 @@ $ pod install
 
 ```
 
-#### 3. app 外部跳转页面
+### 3. App 外部跳转页面
 
 外部通过传入 URL，如果符合规则，即可跳转到app内部的对应的页面。
 
@@ -118,7 +118,7 @@ $ pod install
 ```
 
 
-#### 4. app 内部路由的页面跳转
+### 4. App 内部路由的页面跳转
 
 在 MVVM 框架下，我们只允许 viewModel 的跳转，所以页面的跳转只有 pushViewModel 和 presentViewModel 两种方式。
 
@@ -173,7 +173,7 @@ dismissViewModel:
 
 ```
 
-#### 5. 路由的消息总线
+### 5. 路由的消息总线
 
 在 LPDMvvmRouterKit 库中有一个 LPDEvent 类，这个类是用来做消息总线用的。
 
@@ -189,7 +189,7 @@ dismissViewModel:
 
 ## 使用指南
 
-### 1. app 外部跳转页面
+### 1. App 外部跳转页面
 
 ```objectivec
 
@@ -214,7 +214,7 @@ viewModelName 这个是 ViewModel 去掉前缀 LPD ，去掉后缀 viewModel 剩
 
 options 的类型是 NSDictionary<UIApplicationOpenURLOptionsKey,id>
 
-### 2. app 内部路由的页面跳转
+### 2. App 内部路由的页面跳转
 
 
 app 内部的路由跳转的 URL 就不需要增加 App scheme 的前缀了，直接从 modular scheme 开始，后面的规则和上述所说的一样。
