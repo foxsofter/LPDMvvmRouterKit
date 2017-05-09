@@ -54,7 +54,9 @@ LPDMvvmRouterKit 是一个用 Objectivec-C 编写的，可用在 MVVM 框架下�
 ```bash
 
 git clone git@github.com:LPD-iOS/LPDMvvmRouterKit.git; 
+
 cd LPDMvvmRouterKit/Examples; 
+
 open 'LPDMvvmRouterKit.xcworkspace'
 
 ```
@@ -113,6 +115,7 @@ $ pod install
 ```objectivec
 
   NSURL *url = [NSURL URLWithString:@"me.ele.lpd://lpd/some/push?title=Some&x=11111.11&count=3&str=fwljfwljfwl"];
+  
   [[LPDMvvmRouter sharedInstance] openURL:url options:nil];
 
 ```
@@ -138,7 +141,6 @@ popViewModel:
 
   [self.viewModel performSelector:@selector(popViewModel)];
 
-
 ```
 
 popToRootViewModel:
@@ -147,7 +149,6 @@ popToRootViewModel:
 ```objectivec
 
   [self.viewModel performSelector:@selector(popToRootViewModel)];
-
 
 ```
 
@@ -180,6 +181,7 @@ dismissViewModel:
 ```objectivec
 
   LPDEvent *event = [LPDEvent eventWithEventSelector:@"test:"];
+  
   [[LPDModuleMediator sharedInstance] sendEvent:event];
 
 ```
@@ -194,8 +196,8 @@ dismissViewModel:
 ```objectivec
 
   NSURL *url = [NSURL URLWithString:@"me.ele.lpd://lpd/some/push?title=Some&x=11111.11&count=3&str=fwljfwljfwl"];
+  
   [[LPDMvvmRouter sharedInstance] openURL:url options:nil];
-
 
 ```
 
@@ -252,14 +254,13 @@ dismiss
 
   [self.viewModel performSelector:@selector(popViewModel)];
 
-
 ```
 
 如果是 popViewModel，实现原理就是在 viewModel 中调用自己的 navigation 进行 popViewModelAnimated 操作。
 
 ```objectivec
 
-[self.navigation popViewModelAnimated:YES];
+  [self.navigation popViewModelAnimated:YES];
 
 ```
 
@@ -273,7 +274,6 @@ dismiss
 
   [self.viewModel performSelector:@selector(popToRootViewModel)];
 
-
 ```
 
 如果是 popToRootViewModel，实现原理就是在 viewModel 中调用自己的 navigation 进行 pop 操作。
@@ -281,8 +281,7 @@ dismiss
 
 ```objectivec
 
-
-[self.navigation popToRootViewModelAnimated:YES];
+  [self.navigation popToRootViewModelAnimated:YES];
 
 ```
 
@@ -313,7 +312,7 @@ present 和 push 的原理一样，这里不再赘述。
 
 ```objectivec
 
-[self.navigation dismissNavigationViewModelAnimated:YES completion:nil;
+  [self.navigation dismissNavigationViewModelAnimated:YES completion:nil;
 
 ```
 

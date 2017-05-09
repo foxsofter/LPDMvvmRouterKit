@@ -38,7 +38,9 @@ Or execute the following command:
 ```bash
 
 git clone git@github.com:LPD-iOS/LPDMvvmRouterKit.git; 
+
 cd LPDMvvmRouterKit/Examples; 
+
 open 'LPDMvvmRouterKit.xcworkspace'
 
 ```
@@ -101,6 +103,7 @@ External through the incoming URL, if the rules, you can transition to the corre
 ```objectivec
 
   NSURL *url = [NSURL URLWithString:@"me.ele.lpd://lpd/some/push?title=Some&x=11111.11&count=3&str=fwljfwljfwl"];
+  
   [[LPDMvvmRouter sharedInstance] openURL:url options:nil];
 
 ```
@@ -168,6 +171,7 @@ In the LPDMvvmRouterKit library there is a LPDEvent class, this class is used to
 ```objectivec
 
   LPDEvent *event = [LPDEvent eventWithEventSelector:@"test:"];
+  
   [[LPDModuleMediator sharedInstance] sendEvent:event];
 
 ```
@@ -183,8 +187,8 @@ In the corresponding viewModel to implement
 ```objectivec
 
   NSURL *url = [NSURL URLWithString:@"me.ele.lpd://lpd/some/push?title=Some&x=11111.11&count=3&str=fwljfwljfwl"];
+  
   [[LPDMvvmRouter sharedInstance] openURL:url options:nil];
-
 
 ```
 
@@ -241,7 +245,6 @@ dismiss
 
   [self.viewModel performSelector:@selector(popViewModel)];
 
-
 ```
 
 
@@ -250,7 +253,7 @@ If it is popViewModel, the implementation of the principle is in the viewModel c
 
 ```objectivec
 
-[self.navigation popViewModelAnimated:YES];
+  [self.navigation popViewModelAnimated:YES];
 
 ```
 
@@ -262,7 +265,6 @@ If it is popViewModel, the implementation of the principle is in the viewModel c
 
   [self.viewModel performSelector:@selector(popToRootViewModel)];
 
-
 ```
 
 If it is popToRootViewModel, the implementation of the principle is in the viewModel call their own navigation for pop operation.
@@ -271,7 +273,7 @@ If it is popToRootViewModel, the implementation of the principle is in the viewM
 ```objectivec
 
 
-[self.navigation popToRootViewModelAnimated:YES];
+  [self.navigation popToRootViewModelAnimated:YES];
 
 ```
 
@@ -308,7 +310,7 @@ If it is a dismissViewModel, the implementation principle is to call your naviga
 
 ```objectivec
 
-[self.navigation dismissNavigationViewModelAnimated:YES completion:nil;
+  [self.navigation dismissNavigationViewModelAnimated:YES completion:nil;
 
 ```
 
