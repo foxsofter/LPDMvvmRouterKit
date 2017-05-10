@@ -10,7 +10,7 @@ script:
   - xcodebuild -version
   - xcodebuild -showsdks
 
-  - pod lib lint --allow-warnings
+  - pod lib lint --allow-warnings --verbose
 after_success:
   - bash <(curl -s https://codecov.io/bash)
   - sleep 3
