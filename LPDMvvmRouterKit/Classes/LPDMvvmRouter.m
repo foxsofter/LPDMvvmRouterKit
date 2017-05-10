@@ -16,7 +16,7 @@
 @interface LPDMvvmRouter ()
 
 @property (nonatomic, strong) NSMutableDictionary *viewModelClasses;
-@property (nonatomic, strong) NSMutableDictionary *viewModelObjects;
+@property (nonatomic, strong) NSMapTable *viewModelObjects;
 
 @property (nonatomic, copy) NSDictionary *navigationActions;
 

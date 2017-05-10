@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/cocoapods/dt/LPDMvvmRouterKit.svg">
 <img src="https://img.shields.io/cocoapods/at/LPDMvvmRouterKit.svg">
 <img src="https://img.shields.io/cocoapods/metrics/doc-percent/LPDMvvmRouterKit.svg">
-<img src="https://img.shields.io/badge/platform-iOS%20%7C%20OSX%20%7C%20tvOS%20%7C%20watchOS-ff69b4.svg">
+<img src="https://img.shields.io/badge/platform-iOS-ff69b4.svg">
 <img src="https://img.shields.io/badge/language-Objective--C-orange.svg">
 <a href=""><img src="https://img.shields.io/badge/license-MIT-000000.svg"></a>
 <img src="https://img.shields.io/badge/made%20with-%3C3-blue.svg">
@@ -16,7 +16,7 @@
 <a href="https://lpd-ios.github.io/"><img src="https://img.shields.io/badge/Blog-LPD--iOS-red.svg?style=flat"></a>
 <a href="https://github.com/LPD-iOS"><img src="https://img.shields.io/badge/Organizations-LPD--iOS-brightgreen.svg?style=flat&colorA=abcdef"></a>
 <img src="https://img.shields.io/chrome-web-store/stars/nimelepbpejjlbmoobocpfnjhihnpked.svg?colorA=a0cd34">
-</p>    
+</p>   
 
 LPDMvvmRouterKit 是一个用 Objectivec-C 编写的，可用在 MVVM 框架下做路由。
 

@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/cocoapods/dt/LPDMvvmRouterKit.svg">
 <img src="https://img.shields.io/cocoapods/at/LPDMvvmRouterKit.svg">
 <img src="https://img.shields.io/cocoapods/metrics/doc-percent/LPDMvvmRouterKit.svg">
-<img src="https://img.shields.io/badge/platform-iOS%20%7C%20OSX%20%7C%20tvOS%20%7C%20watchOS-ff69b4.svg">
+<img src="https://img.shields.io/badge/platform-iOS-ff69b4.svg">
 <img src="https://img.shields.io/badge/language-Objective--C-orange.svg">
 <a href=""><img src="https://img.shields.io/badge/license-MIT-000000.svg"></a>
 <img src="https://img.shields.io/badge/made%20with-%3C3-blue.svg">
