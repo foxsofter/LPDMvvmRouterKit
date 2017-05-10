@@ -25,7 +25,6 @@
   [[LPDMvvmRouter sharedInstance] performActionWithUrl:[LPDRouteURL routerURLWithString:@"lpd://some/push?title=Some&x=11111.11&count=3&str=fwljfwljfwl"] completion:^(id  _Nullable x) {
     NSString *ss = x;
   }];
-  NSLog(@"x = %f", [self.viewModel x]);
 
 }
 - (IBAction)popViewModel:(id)sender {
