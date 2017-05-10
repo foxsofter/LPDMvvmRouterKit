@@ -144,7 +144,7 @@ static NSMutableArray *allSchemes = nil;
       [navigationViewModel performAction:action parameters:params completion:nil];
     } else if ([url.action isEqualToString:@"present"]) {
       NSDictionary *params = nil;
-      id presentNavigationViewModel = [[navigationViewModel.class alloc] initWithRootViewModel:viewModel];
+      id presentNavigationViewModel = [[LPDNavigationViewModel alloc] initWithRootViewModel:(id<LPDViewModelProtocol>)viewModel];
       if (completion) {
         params = @{ @"presentNavigationViewModel" : presentNavigationViewModel,
                     @"animated" : animated,
