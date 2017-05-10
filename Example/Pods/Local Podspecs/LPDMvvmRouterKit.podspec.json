@@ -3,7 +3,7 @@
   "version": "0.1.4",
   "summary": "A short description of LPDMvvmRouterKit.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/foxsofter/LPDMvvmRouterKit",
+  "homepage": "https://github.com/LPD-iOS/LPDMvvmRouterKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "foxsofter": "foxsofter@gmail.com"
   },
   "source": {
-    "git": "https://github.com/foxsofter/LPDMvvmRouterKit.git",
+    "git": "https://github.com/LPD-iOS/LPDMvvmRouterKit.git",
     "tag": "0.1.4"
   },
   "platforms": {

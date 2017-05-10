@@ -21,7 +21,7 @@ PODS:
     - LPDAdditionsKit
     - Masonry
     - SDVersion
-  - LPDMvvmKit (0.9.3):
+  - LPDMvvmKit (0.9.5):
     - LPDAdditionsKit
     - LPDCollectionViewKit
     - LPDControlsKit
@@ -55,8 +55,8 @@ SPEC CHECKSUMS:
   LPDAdditionsKit: 68d721bbe5eda0e4dd0704ecf12ef838e7c452e6
   LPDCollectionViewKit: 3dd9cef6c6066e2017d07a6985d9ee6f948d1f96
   LPDControlsKit: 60a4614aaff5ad82530d848f253da14a99c0d035
-  LPDMvvmKit: 649e509f70ceb0ad1ca00c2803438e331b8d2623
-  LPDMvvmRouterKit: 25d4e444bc1665608469e0f67d950c6e868bd376
+  LPDMvvmKit: e35d66780089c910c6324a9ed9792ff6d9a41bf9
+  LPDMvvmRouterKit: 2f5d2c0f97cf62cdadefbd76eb99c6d86af44925
   LPDNetworkingKit: afdec5c9ed7f410e5b3b4de9252b6c5c8f25fe07
   LPDTableViewKit: 99a4dc55930e0aa8ebf8b6689a77bda010ded2e8
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
