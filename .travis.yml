@@ -1,14 +1,5 @@
 language: objective-c
 osx_image: xcode8.3
-
-env:
-  global:
-    - LANG=en_US.UTF-8
-    - LC_ALL=en_US.UTF-8
-    - XCODE_WORKSPACE=Example/LPDMvvmRouterKit.xcworkspace
-  matrix:
-    - SCHEME="LPDMvvmRouterKit-Example"
-
 branches:
   only:
     - master
@@ -18,9 +9,8 @@ script:
   - set -o pipefail
   - xcodebuild -version
   - xcodebuild -showsdks
-  
-  - pod lib lint --allow-warnings --verbose
-  
+
+  - pod lib lint --allow-warnings
 after_success:
   - bash <(curl -s https://codecov.io/bash)
   - sleep 3
