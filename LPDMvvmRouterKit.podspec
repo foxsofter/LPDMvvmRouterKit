@@ -40,5 +40,5 @@ TODO: Add long description of the pod here.
     s.private_header_files = 'LPDMvvmRouterKit/Classes/NSObject+LPDPerformAction.h', 'LPDMvvmRouterKit/Classes/UIViewController+LPDFinder.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'LPDMvvmKit','~> 0.9.8'
+  s.dependency 'LPDMvvmKit'
 end
