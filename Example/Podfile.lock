@@ -29,8 +29,8 @@ PODS:
     - LPDTableViewKit
     - MJRefresh
     - ReactiveObjC
-  - LPDMvvmRouterKit (0.1.8):
-    - LPDMvvmKit
+  - LPDMvvmRouterKit (0.1.9):
+    - LPDMvvmKit (~> 0.9.8)
   - LPDNetworkingKit (0.2.4):
     - AFNetworking
     - ReactiveObjC
@@ -56,7 +56,7 @@ SPEC CHECKSUMS:
   LPDCollectionViewKit: 3dd9cef6c6066e2017d07a6985d9ee6f948d1f96
   LPDControlsKit: 60a4614aaff5ad82530d848f253da14a99c0d035
   LPDMvvmKit: 68564cd7d6a49c03b3932a597dfb797517683912
-  LPDMvvmRouterKit: 5a699cf865ae6188d7bd11a0b2aef2a9282788f5
+  LPDMvvmRouterKit: 587a62d3f256c19bb2cc0975c906ce7c194d77b5
   LPDNetworkingKit: afdec5c9ed7f410e5b3b4de9252b6c5c8f25fe07
   LPDTableViewKit: 99a4dc55930e0aa8ebf8b6689a77bda010ded2e8
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e

@@ -1,6 +1,6 @@
 {
   "name": "LPDMvvmRouterKit",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "summary": "A short description of LPDMvvmRouterKit.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/LPD-iOS/LPDMvvmRouterKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/LPD-iOS/LPDMvvmRouterKit.git",
-    "tag": "0.1.8"
+    "tag": "0.1.9"
   },
   "platforms": {
     "ios": "8.0"
@@ -25,7 +25,7 @@
   ],
   "dependencies": {
     "LPDMvvmKit": [
-
+      "~> 0.9.8"
     ]
   }
 }
