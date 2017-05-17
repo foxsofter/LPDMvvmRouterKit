@@ -34,7 +34,7 @@ static NSMutableArray *allSchemes = nil;
       NSArray *urlTypes = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleURLTypes"];
       for(NSDictionary *urlType in urlTypes) {
         if(urlType[@"CFBundleURLSchemes"]) {
-          [allSchemes addObject:urlType[@"CFBundleURLSchemes"]];
+          [allSchemes addObjectsFromArray:urlType[@"CFBundleURLSchemes"]];
         }
       }
     }
