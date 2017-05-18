@@ -157,6 +157,7 @@ static inline void getTypeValueByNSValue(NSValue *inValue, const char *typeCode,
           object_setIvar(self, ivars[i], ivarValue);
         }
       }
+        *stop = YES;
     }];
     
   }
