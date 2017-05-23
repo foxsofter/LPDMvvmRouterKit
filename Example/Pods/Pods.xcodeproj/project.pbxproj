@@ -152,7 +152,7 @@
 		3C7B6969BD3B4A75E5F935124AABE932 /* UITableViewHeaderFooterView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 543DFFDF662468F1C363C68E4A6B35F4 /* UITableViewHeaderFooterView+RACSignalSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C9E6A54FBBB2CDEFA4F0EC0B42BB596 /* RACDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EE1CEE046B4EF54244A0A95EE3EE866 /* RACDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E41EC21E44F1BF9108C9E0F31B10F46 /* LPDScrollViewControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F9802A52301E7F6C727082785E93BF5 /* LPDScrollViewControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EB07D15D75058C12D9FB3FC137D8F53 /* UIViewController+LPDFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F89215C6A7B13280EF44B56A4954C1 /* UIViewController+LPDFinder.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3EB07D15D75058C12D9FB3FC137D8F53 /* UIViewController+LPDFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F89215C6A7B13280EF44B56A4954C1 /* UIViewController+LPDFinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F6083F0B76936E820A2F4B796500621 /* LPDCollectionCellViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDEF144766872C6311EC537E105EDF5 /* LPDCollectionCellViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F725B3B3649D4DA52313CA6EC5C8D2C /* UIView+LPDFindSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0408DE0C4F4DB74B8FEE66AA9300594 /* UIView+LPDFindSubView.m */; };
 		3F81DE78E8780D7C26E19C7CEAA6855D /* LPDEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E379928F3D4A77291073C5DB26A33B8F /* LPDEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -950,7 +950,7 @@
 		03B5570809E835E9778D039674F90F30 /* LPDPopupView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDPopupView.h; path = LPDControlsKit/Classes/LPDPopupView/LPDPopupView.h; sourceTree = "<group>"; };
 		03D9BEF289D36A963D67195860CA5298 /* LPDPopupActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDPopupActionSheet.h; path = LPDControlsKit/Classes/LPDPopupView/LPDPopupActionSheet.h; sourceTree = "<group>"; };
 		046A2E485BFFD1C8ABD0ACF3C6BCB931 /* NSObject+LPDAssociatedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+LPDAssociatedObject.h"; path = "LPDAdditionsKit/Classes/NSObject+LPDAssociatedObject.h"; sourceTree = "<group>"; };
-		058F8C76E18E196FCD978CE811C778D2 /* LPDMvvmRouterKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LPDMvvmRouterKit.modulemap; sourceTree = "<group>"; };
+		058F8C76E18E196FCD978CE811C778D2 /* LPDMvvmRouterKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LPDMvvmRouterKit.modulemap; sourceTree = "<group>"; };
 		059B0D43AAF464BE00B93F7CE9ADDA76 /* NSMutableAttributedString+LPDCheck.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+LPDCheck.m"; path = "LPDControlsKit/Classes/LPDAlertView/NSMutableAttributedString+LPDCheck.m"; sourceTree = "<group>"; };
 		05B30F913E4B7ED77245E84DA10963A0 /* LPDMvvmRouterKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPDMvvmRouterKit.xcconfig; sourceTree = "<group>"; };
 		06C7C15D0FED55277E9431F9F1FD0C9E /* NSObject+LPDPerformAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+LPDPerformAction.h"; sourceTree = "<group>"; };
@@ -978,7 +978,7 @@
 		10A3A1F677E9CC8FDE2CE48DDB655C0D /* LPDMvvmKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LPDMvvmKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C24A0B3B4D817F6C4F9BF82F46498C /* LPDNetworkingKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDNetworkingKit.h; path = LPDNetworkingKit/Classes/LPDNetworkingKit.h; sourceTree = "<group>"; };
 		11FA9B1D362481E26F10F9C07E9B1826 /* NSObject+RACKVOWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACKVOWrapper.h"; path = "ReactiveObjC/NSObject+RACKVOWrapper.h"; sourceTree = "<group>"; };
-		12221C5B551511EE457A6BD955712711 /* LPDCollectionViewKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LPDCollectionViewKit.modulemap; sourceTree = "<group>"; };
+		12221C5B551511EE457A6BD955712711 /* LPDCollectionViewKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LPDCollectionViewKit.modulemap; sourceTree = "<group>"; };
 		134FC8ED201AE305CDD3B913167E4193 /* NSArray+LPDRandom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+LPDRandom.m"; path = "LPDAdditionsKit/Classes/NSArray+LPDRandom.m"; sourceTree = "<group>"; };
 		14A6DFBF65015059FD58C24B5750BB9A /* UIRefreshControl+RACCommandSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+RACCommandSupport.m"; path = "ReactiveObjC/UIRefreshControl+RACCommandSupport.m"; sourceTree = "<group>"; };
 		1515995E94624904D051F2CA8AA367CB /* Pods-LPDMvvmRouterKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LPDMvvmRouterKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -1014,7 +1014,7 @@
 		1FDE4671B9238E402923D894DB6A78D0 /* LPDViewLoadingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDViewLoadingProtocol.h; path = LPDMvvmKit/Classes/ViewControllers/LPDViewLoadingProtocol.h; sourceTree = "<group>"; };
 		1FEC9C00FDAA2C47E47FC86530A540BC /* RACSignal+LPDAddition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RACSignal+LPDAddition.m"; path = "LPDMvvmKit/Classes/Additions/RACSignal+LPDAddition.m"; sourceTree = "<group>"; };
 		1FFB322C2FECA171F19BC2B48589DC82 /* LPDAdditionsKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPDAdditionsKit-prefix.pch"; sourceTree = "<group>"; };
-		205A449BB29BC3D0D500C86376DB0CE2 /* SDVersion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SDVersion.modulemap; sourceTree = "<group>"; };
+		205A449BB29BC3D0D500C86376DB0CE2 /* SDVersion.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SDVersion.modulemap; sourceTree = "<group>"; };
 		210586267F2DB092E32DD89ED40A3697 /* RACSignalSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSignalSequence.m; path = ReactiveObjC/RACSignalSequence.m; sourceTree = "<group>"; };
 		2113D431785F1CA4560694482699B567 /* RACSignal+Operations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RACSignal+Operations.m"; path = "ReactiveObjC/RACSignal+Operations.m"; sourceTree = "<group>"; };
 		2153DCD0BDF9BD6313E4C87A6AE018ED /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
@@ -1036,18 +1036,18 @@
 		281F3D8879140C8193A877DDDA4D47E6 /* NSObject+LPDSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+LPDSwizzling.m"; path = "LPDAdditionsKit/Classes/NSObject+LPDSwizzling.m"; sourceTree = "<group>"; };
 		296F179F821D1AE7E97E54FC8218F780 /* LPDControlsKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPDControlsKit-dummy.m"; sourceTree = "<group>"; };
 		29D3D6F22E22C0FB24F4F949A5DBECDD /* NSMutableArray+LPDWeak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+LPDWeak.m"; path = "LPDMvvmKit/Classes/Additions/NSMutableArray+LPDWeak.m"; sourceTree = "<group>"; };
-		2AB13A80F7724C6604A0FF1314694476 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		2AB13A80F7724C6604A0FF1314694476 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AFNetworking.modulemap; sourceTree = "<group>"; };
 		2BF44504E9CF5CB609F85E270AA3B51C /* LKUserDefaultsProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKUserDefaultsProxy.h; path = LPDNetworkingKit/Classes/LKUserDefaults/LKUserDefaultsProxy.h; sourceTree = "<group>"; };
 		2DE2215FFCF18BADA6A1B8B6D6BC1EC9 /* LPDTableViewKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPDTableViewKit-dummy.m"; sourceTree = "<group>"; };
 		2EAF65E9A68B09BBFFC620D6D29A0A92 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
-		2ED15CB1D0D4931BB552ABE7C572D7C7 /* Pods_LPDMvvmRouterKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LPDMvvmRouterKit_Example.framework; path = "Pods-LPDMvvmRouterKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ED15CB1D0D4931BB552ABE7C572D7C7 /* Pods_LPDMvvmRouterKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPDMvvmRouterKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3005BA687535E19F7597A2631B750623 /* NSNumber+LPDMoneyAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+LPDMoneyAddition.h"; path = "LPDAdditionsKit/Classes/NSNumber+LPDMoneyAddition.h"; sourceTree = "<group>"; };
 		302685F074651CFC9FA07280744D160B /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
 		3099ABFFE41CC39E4061C2A41314B0CC /* UIAlertView+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+RACSignalSupport.m"; path = "ReactiveObjC/UIAlertView+RACSignalSupport.m"; sourceTree = "<group>"; };
 		30E25AC242FA305165C56A0CE953F097 /* RACStringSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACStringSequence.m; path = ReactiveObjC/RACStringSequence.m; sourceTree = "<group>"; };
 		30E7F6784898087B5EF73E0092E955B4 /* NSArray+RACSequenceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+RACSequenceAdditions.h"; path = "ReactiveObjC/NSArray+RACSequenceAdditions.h"; sourceTree = "<group>"; };
 		30F2B0380B62CEA21AC0EF9C5A9E15FA /* ReactiveObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReactiveObjC.xcconfig; sourceTree = "<group>"; };
-		316E2EA5F38718C783D345DC87D2023A /* SDVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDVersion.framework; path = SDVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		316E2EA5F38718C783D345DC87D2023A /* SDVersion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDVersion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3176F00E3E31A730E6F1616D436BE209 /* NSFileHandle+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSFileHandle+RACSupport.m"; path = "ReactiveObjC/NSFileHandle+RACSupport.m"; sourceTree = "<group>"; };
 		31CBE954A366593FF5EECBF5C96417F1 /* LPDCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDCollectionView.m; path = LPDCollectionViewKit/Classes/LPDCollectionView.m; sourceTree = "<group>"; };
 		31D51CCE3E5203DB4397D04904FC17E3 /* UIControl+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+RACSignalSupport.h"; path = "ReactiveObjC/UIControl+RACSignalSupport.h"; sourceTree = "<group>"; };
@@ -1104,8 +1104,8 @@
 		45867E9D210CD8A4E5CA457BF0D0071F /* LPDScrollViewModelProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDScrollViewModelProtocol.h; path = LPDMvvmKit/Classes/ViewModels/LPDScrollViewModelProtocol.h; sourceTree = "<group>"; };
 		45A5BBEE7E4A6B98D832B579D1FBF339 /* LPDCollectionCellViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDCollectionCellViewModel.m; path = LPDCollectionViewKit/Classes/LPDCollectionCellViewModel.m; sourceTree = "<group>"; };
 		46154DFB7D016112537533F6E44DD807 /* MJRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-prefix.pch"; sourceTree = "<group>"; };
-		46C70C2DD2CC0CBBFBEB35409794524C /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		46D25A5F5B7974AAEED2C96F3E6A541E /* LPDControlsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LPDControlsKit.framework; path = LPDControlsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C70C2DD2CC0CBBFBEB35409794524C /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D25A5F5B7974AAEED2C96F3E6A541E /* LPDControlsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LPDControlsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		470643C144E7BDA4E56FF951D62DDD30 /* NSArray+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+RACSequenceAdditions.m"; path = "ReactiveObjC/NSArray+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		47A03647BABE712582AD4BAB01A473FC /* RACEmptySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEmptySequence.h; path = ReactiveObjC/RACEmptySequence.h; sourceTree = "<group>"; };
 		47F24456245FDEF8D67122E0C89821AF /* RACSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACSubscriber.m; path = ReactiveObjC/RACSubscriber.m; sourceTree = "<group>"; };
@@ -1146,7 +1146,7 @@
 		56A4FFB31AB7F1D27464A559B529EA10 /* UIImage+LPDAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+LPDAddition.h"; path = "LPDAdditionsKit/Classes/UIImage+LPDAddition.h"; sourceTree = "<group>"; };
 		56B52ECB5CBEF97A6BA5E77FACCA9C86 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		57FE5368778B8DD950A50ACE083FE05A /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		588CAB513BE5A7B7409296229031FAA8 /* LPDAdditionsKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LPDAdditionsKit.modulemap; sourceTree = "<group>"; };
+		588CAB513BE5A7B7409296229031FAA8 /* LPDAdditionsKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LPDAdditionsKit.modulemap; sourceTree = "<group>"; };
 		58CA7B145E9D0EDE385AA33383EB6B38 /* LPDCollectionHeaderViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDCollectionHeaderViewModel.m; path = LPDCollectionViewKit/Classes/LPDCollectionHeaderViewModel.m; sourceTree = "<group>"; };
 		598E40CCDD36459550B01E67E4145122 /* LPDAdditionsKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPDAdditionsKit.xcconfig; sourceTree = "<group>"; };
 		59A5E55AC76374D48C5700AF8F888BCC /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshStateHeader.h; path = MJRefresh/Custom/Header/MJRefreshStateHeader.h; sourceTree = "<group>"; };
@@ -1189,14 +1189,14 @@
 		65F367B6B7A2EB4D8C1F9470414B80C5 /* NSDictionary+RACSequenceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+RACSequenceAdditions.m"; path = "ReactiveObjC/NSDictionary+RACSequenceAdditions.m"; sourceTree = "<group>"; };
 		6600E6719A2E33F6997EDE3DF1ECE6C1 /* RACValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACValueTransformer.h; path = ReactiveObjC/RACValueTransformer.h; sourceTree = "<group>"; };
 		668BEC58B87AC1B2645D2C1D90483864 /* Pods-LPDMvvmRouterKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LPDMvvmRouterKit_Example-dummy.m"; sourceTree = "<group>"; };
-		668D560C8BF470BBB131D0D4DBBCB536 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Masonry.modulemap; sourceTree = "<group>"; };
+		668D560C8BF470BBB131D0D4DBBCB536 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Masonry.modulemap; sourceTree = "<group>"; };
 		6857AC419E63AB75D01B92A7863A1634 /* LPDViewControllerFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDViewControllerFactory.h; path = LPDMvvmKit/Classes/ViewModels/LPDViewControllerFactory.h; sourceTree = "<group>"; };
 		6863D59F9687C1D47864A43F7197F90F /* RACUnarySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACUnarySequence.h; path = ReactiveObjC/RACUnarySequence.h; sourceTree = "<group>"; };
 		6892A5A30DC37B91D469C97DC8F50308 /* LPDViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDViewModel.h; path = LPDMvvmKit/Classes/ViewModels/LPDViewModel.h; sourceTree = "<group>"; };
 		68B3A074B9BE84F8D3BDFE8C3D0A938E /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
 		693231C621E9524849B0B0337C47292F /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
 		693738D18A7BC38B28763C818C37B7AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69F08C641F6692F1B09F01CAE4597303 /* LPDNetworkingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LPDNetworkingKit.framework; path = LPDNetworkingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69F08C641F6692F1B09F01CAE4597303 /* LPDNetworkingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LPDNetworkingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A04722AA3B024A68515DD506B5A8A75 /* RACSerialDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSerialDisposable.h; path = ReactiveObjC/RACSerialDisposable.h; sourceTree = "<group>"; };
 		6A42B329E6EAAA5010BF69C5271DDE24 /* LPDCollectionViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDCollectionViewProtocol.h; path = LPDCollectionViewKit/Classes/LPDCollectionViewProtocol.h; sourceTree = "<group>"; };
 		6A7D28417F11E3373759BD5CC6E7AE16 /* LPDNetworkingKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LPDNetworkingKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1217,7 +1217,7 @@
 		6F1CA15A98694F46AED7AF27AC021E02 /* UITableViewCell+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+RACSignalSupport.m"; path = "ReactiveObjC/UITableViewCell+RACSignalSupport.m"; sourceTree = "<group>"; };
 		6F94D9E647DF9A989E9C600AA66D20D3 /* UIActionSheet+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+RACSignalSupport.m"; path = "ReactiveObjC/UIActionSheet+RACSignalSupport.m"; sourceTree = "<group>"; };
 		705100E8F8362A4C6E92624976BCEFC7 /* RACSubscriptionScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriptionScheduler.h; path = ReactiveObjC/RACSubscriptionScheduler.h; sourceTree = "<group>"; };
-		70BEA83184E63EF66FF37FD57BE3FD7A /* MJRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MJRefresh.modulemap; sourceTree = "<group>"; };
+		70BEA83184E63EF66FF37FD57BE3FD7A /* MJRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MJRefresh.modulemap; sourceTree = "<group>"; };
 		70DDDB86D608C8BAC266947F6703AF04 /* LPDTableViewItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDTableViewItemProtocol.h; path = LPDTableViewKit/Classes/LPDTableViewItemProtocol.h; sourceTree = "<group>"; };
 		7100DEB5CD2FD552AA0503F958061C49 /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackNormalFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
 		71070BABA1D32A1C750E118C187FEF9D /* LPDUserDefaultsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDUserDefaultsManager.h; path = LPDNetworkingKit/Classes/Services/LPDUserDefaultsManager.h; sourceTree = "<group>"; };
@@ -1233,7 +1233,7 @@
 		7402ADEFE5E34CC13DC72DF7BEAAFE91 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		747527A801BCA220671231E8C02171B4 /* UIImagePickerController+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImagePickerController+RACSignalSupport.m"; path = "ReactiveObjC/UIImagePickerController+RACSignalSupport.m"; sourceTree = "<group>"; };
 		755D44A5E6E36F53A3A4DB5DE4984870 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		7578BAE4224F65DE99AA3EDCFC40DDB2 /* LPDMvvmKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LPDMvvmKit.framework; path = LPDMvvmKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7578BAE4224F65DE99AA3EDCFC40DDB2 /* LPDMvvmKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LPDMvvmKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		757B91FD19721D37B1CC61008B249F24 /* LPDUserDefaultModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDUserDefaultModel.m; path = LPDNetworkingKit/Classes/Models/LPDUserDefaultModel.m; sourceTree = "<group>"; };
 		75A029185564D6CB26493018F7294A68 /* RACDynamicSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACDynamicSignal.m; path = ReactiveObjC/RACDynamicSignal.m; sourceTree = "<group>"; };
 		768AC2E82C8A3BAD899CA3991BD11A6D /* LPDCollectionViewFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDCollectionViewFactory.m; path = LPDCollectionViewKit/Classes/LPDCollectionViewFactory.m; sourceTree = "<group>"; };
@@ -1250,14 +1250,14 @@
 		79AF67B61C6D98FC8CDB3323545AD9E6 /* ReactiveObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReactiveObjC-dummy.m"; sourceTree = "<group>"; };
 		79C0A8F1ADAF75C7380BC6254052C31E /* LPDViewModelNetworkStatusProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDViewModelNetworkStatusProtocol.h; path = LPDMvvmKit/Classes/ViewModels/LPDViewModelNetworkStatusProtocol.h; sourceTree = "<group>"; };
 		79CC24AE5C208DDD5C70F25BDC6BB767 /* RACSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSubscriber.h; path = ReactiveObjC/RACSubscriber.h; sourceTree = "<group>"; };
-		7A233B802E9D3C8CFE80E82A6E429D7E /* Pods-LPDMvvmRouterKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LPDMvvmRouterKit_Example.modulemap"; sourceTree = "<group>"; };
+		7A233B802E9D3C8CFE80E82A6E429D7E /* Pods-LPDMvvmRouterKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LPDMvvmRouterKit_Example.modulemap"; sourceTree = "<group>"; };
 		7A4565AABCF8AD1DEFB6191F2DDD8B41 /* NSString+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RACSupport.h"; path = "ReactiveObjC/NSString+RACSupport.h"; sourceTree = "<group>"; };
-		7AC0CE29108B621974627BA8802B704F /* LPDMvvmRouterKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LPDMvvmRouterKit.framework; path = LPDMvvmRouterKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AC0CE29108B621974627BA8802B704F /* LPDMvvmRouterKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LPDMvvmRouterKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC3EB16BFCE365981FCFBCB210987BA /* RACArraySequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACArraySequence.m; path = ReactiveObjC/RACArraySequence.m; sourceTree = "<group>"; };
 		7BD13C6578BAEA08A8E7E35F39631CA2 /* LPDTableCellViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDTableCellViewModel.m; path = LPDTableViewKit/Classes/LPDTableCellViewModel.m; sourceTree = "<group>"; };
 		7C092EFA42F1A12C54C79E11AEDE014E /* LPDApiClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDApiClient.m; path = LPDNetworkingKit/Classes/Services/LPDApiClient.m; sourceTree = "<group>"; };
 		7C4AAE59D60A11D7B1F384972067B395 /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifHeader.m; path = MJRefresh/Custom/Header/MJRefreshGifHeader.m; sourceTree = "<group>"; };
-		7C874B8D8614C016BD5F02ECA1200CDB /* Pods_LPDMvvmRouterKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LPDMvvmRouterKit_Tests.framework; path = "Pods-LPDMvvmRouterKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C874B8D8614C016BD5F02ECA1200CDB /* Pods_LPDMvvmRouterKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPDMvvmRouterKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9A94D439DCB2738CDAA845803894FA /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
 		7D055E64CBF70579DDAA418462E0B914 /* LPDCollectionItemViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDCollectionItemViewModel.h; path = LPDCollectionViewKit/Classes/LPDCollectionItemViewModel.h; sourceTree = "<group>"; };
 		7D189D76353E509641ED674692CECA8A /* LPDCollectionViewImageCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDCollectionViewImageCell.m; path = LPDCollectionViewKit/Classes/LPDCollectionViewImageCell.m; sourceTree = "<group>"; };
@@ -1273,7 +1273,7 @@
 		8229F31997E32B2B6287553D080B16D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		826096583DF623928F13C5E986A8A55C /* LPDTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDTabBarController.m; path = LPDMvvmKit/Classes/ViewControllers/LPDTabBarController.m; sourceTree = "<group>"; };
 		82F929FC9A3B5584B1DAAF7A375A70E8 /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
-		8350C412B3DDE3C6C982FF53ACB0E6EB /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8350C412B3DDE3C6C982FF53ACB0E6EB /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83839E587A0B557AAD9613080C378BA4 /* KxMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KxMenu.m; path = LPDControlsKit/Classes/KxMenu/KxMenu.m; sourceTree = "<group>"; };
 		83B0D983CB3EA937DBF1E67B06C3A3DA /* RACTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTuple.m; path = ReactiveObjC/RACTuple.m; sourceTree = "<group>"; };
 		84276DD64FF5866185ED231353614A2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -1294,7 +1294,7 @@
 		898AA9AC7C935E1A45E5A2BB81A46A8D /* RACScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACScheduler.h; path = ReactiveObjC/RACScheduler.h; sourceTree = "<group>"; };
 		898BB12AC68379430D9C4A3294A4612F /* NSObject+RACPropertySubscribing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RACPropertySubscribing.m"; path = "ReactiveObjC/NSObject+RACPropertySubscribing.m"; sourceTree = "<group>"; };
 		89FC21ECC3D05BC5A3BFEDF323BCF2A9 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
-		8A43DBF8961608443AFCA71A29F39ED7 /* YYModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YYModel.modulemap; sourceTree = "<group>"; };
+		8A43DBF8961608443AFCA71A29F39ED7 /* YYModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YYModel.modulemap; sourceTree = "<group>"; };
 		8A9D7D920E39C9C5B61E32668B9CD359 /* RACStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACStream.m; path = ReactiveObjC/RACStream.m; sourceTree = "<group>"; };
 		8B36C22DE742AB9059CB52B7B8750536 /* LPDViewNetworkStatusProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDViewNetworkStatusProtocol.h; path = LPDMvvmKit/Classes/ViewControllers/LPDViewNetworkStatusProtocol.h; sourceTree = "<group>"; };
 		8B3EB61BC7AE8DD7470B406787E4F740 /* RACEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEvent.m; path = ReactiveObjC/RACEvent.m; sourceTree = "<group>"; };
@@ -1322,12 +1322,12 @@
 		926FD1D7AE7DE78EEB32ADD9B88D0953 /* RACMulticastConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACMulticastConnection.h; path = ReactiveObjC/RACMulticastConnection.h; sourceTree = "<group>"; };
 		927F98C50A945F52E9C83CC5334902A6 /* UIControl+Block.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+Block.h"; path = "LPDAdditionsKit/Classes/UIControl+Block.h"; sourceTree = "<group>"; };
 		929660E25B64AFDC3D7B71AB9417DCF8 /* RACSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACSignal.h; path = ReactiveObjC/RACSignal.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93B427A622DFBB9EF464F58D7146E63A /* NSString+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RACSupport.m"; path = "ReactiveObjC/NSString+RACSupport.m"; sourceTree = "<group>"; };
 		95EB6DCB801343B85E14E2C9AD3F26A2 /* NSObject+LPDPerformAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LPDPerformAction.m"; sourceTree = "<group>"; };
 		9634E5591E598E2A06C27992A53E8E83 /* UITextField+LPDRACSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+LPDRACSignal.h"; path = "LPDMvvmKit/Classes/Additions/UITextField+LPDRACSignal.h"; sourceTree = "<group>"; };
 		968E08546385EA7A9503D475A7632560 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
-		96C45B5E7C6031820C389D1A78B02AC2 /* ReactiveObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReactiveObjC.modulemap; sourceTree = "<group>"; };
+		96C45B5E7C6031820C389D1A78B02AC2 /* ReactiveObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ReactiveObjC.modulemap; sourceTree = "<group>"; };
 		976CF21C86E320E5163E2E26E288147C /* UIColor+LPDAddtion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+LPDAddtion.m"; path = "LPDAdditionsKit/Classes/UIColor+LPDAddtion.m"; sourceTree = "<group>"; };
 		97E542A2EFF5FDA458F18D9DCF185FC9 /* NSData+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+RACSupport.h"; path = "ReactiveObjC/NSData+RACSupport.h"; sourceTree = "<group>"; };
 		984A847DCCF7DBFC275B08EBCC9088F3 /* LPDAdditionsKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPDAdditionsKit-umbrella.h"; sourceTree = "<group>"; };
@@ -1338,7 +1338,7 @@
 		9B136B897C3AFD2DF68E2897BC8BE774 /* LPDAdditionsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LPDAdditionsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B38ABDD8073CD2629DC2C8CADA815FC /* LPDTableViewModel+React.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "LPDTableViewModel+React.m"; path = "LPDMvvmKit/Classes/ViewModels/LPDTableViewModel+React.m"; sourceTree = "<group>"; };
 		9B7F2F73C5FEC523582DE9B17D303F25 /* RACKVOChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACKVOChannel.m; path = ReactiveObjC/RACKVOChannel.m; sourceTree = "<group>"; };
-		9BBDD9A0E56598E1175146DDE863D8B2 /* LPDTableViewKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LPDTableViewKit.modulemap; sourceTree = "<group>"; };
+		9BBDD9A0E56598E1175146DDE863D8B2 /* LPDTableViewKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LPDTableViewKit.modulemap; sourceTree = "<group>"; };
 		9C000984D553D2CD4BE09C49A6036631 /* LPDModelProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDModelProtocol.h; path = LPDNetworkingKit/Classes/Models/LPDModelProtocol.h; sourceTree = "<group>"; };
 		9C02FD13D0B150749FB90067E6B340CE /* UICollectionReusableView+RACSignalSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionReusableView+RACSignalSupport.h"; path = "ReactiveObjC/UICollectionReusableView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		9C4E9CE1C839298790495FAFEEF37091 /* NSObject+LPDSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+LPDSwizzling.h"; path = "LPDAdditionsKit/Classes/NSObject+LPDSwizzling.h"; sourceTree = "<group>"; };
@@ -1369,7 +1369,7 @@
 		A6ABD1C2482E694CE5888C675BFF3E86 /* UIViewController+LPDFinder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LPDFinder.m"; sourceTree = "<group>"; };
 		A7176A859A111F7FAF9DA10869EF6EB6 /* LPDViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDViewController.h; path = LPDMvvmKit/Classes/ViewControllers/LPDViewController.h; sourceTree = "<group>"; };
 		A7C1056C07D5E6F241C9234A59ABDA95 /* UIButton+LPDAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+LPDAddition.h"; path = "LPDAdditionsKit/Classes/UIButton+LPDAddition.h"; sourceTree = "<group>"; };
-		A7C1DC5741E14AA92A7D7B0BFF2635E0 /* LPDMvvmKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LPDMvvmKit.modulemap; sourceTree = "<group>"; };
+		A7C1DC5741E14AA92A7D7B0BFF2635E0 /* LPDMvvmKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LPDMvvmKit.modulemap; sourceTree = "<group>"; };
 		A7E04EBB65436312B8613BB16AC9DA2E /* LPDCollectionViewKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPDCollectionViewKit-dummy.m"; sourceTree = "<group>"; };
 		A894B90051B261730BDABCCDEF7FB3AB /* LPDTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDTableView.m; path = LPDTableViewKit/Classes/LPDTableView.m; sourceTree = "<group>"; };
 		A8BD3540204D157B554394D7ABDD5CF8 /* RACPassthroughSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACPassthroughSubscriber.h; path = ReactiveObjC/RACPassthroughSubscriber.h; sourceTree = "<group>"; };
@@ -1388,10 +1388,10 @@
 		ADF1FFE34C95FA280F79E43E8278D298 /* LPDAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDAlertView.h; path = LPDControlsKit/Classes/LPDAlertView/LPDAlertView.h; sourceTree = "<group>"; };
 		AE04F96C52D321DC5AAF296EB5D3CDF3 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
 		AE20A52F7D6A0DC74318A2A255189849 /* RACStream+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACStream+Private.h"; path = "ReactiveObjC/RACStream+Private.h"; sourceTree = "<group>"; };
-		AE371A7C759670E7A92149C9E4F22373 /* LPDCollectionViewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LPDCollectionViewKit.framework; path = LPDCollectionViewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE371A7C759670E7A92149C9E4F22373 /* LPDCollectionViewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LPDCollectionViewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE957F893CB32914B31662446F6AEC45 /* RACImmediateScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACImmediateScheduler.h; path = ReactiveObjC/RACImmediateScheduler.h; sourceTree = "<group>"; };
 		AF0B72C8FBCBD30A57899513AA4BB060 /* RACTestScheduler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACTestScheduler.m; path = ReactiveObjC/RACTestScheduler.m; sourceTree = "<group>"; };
-		AF200D081628C53D8446EF3497740C77 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF200D081628C53D8446EF3497740C77 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8646DB5DB54C11B7F6A480A7E709B3 /* RACArraySequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACArraySequence.h; path = ReactiveObjC/RACArraySequence.h; sourceTree = "<group>"; };
 		AF8A12F6704D7469A2FB645A3AC8441A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFD2D7D75637EE73C91EDEFBCC18B97F /* LPDCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDCollectionView.h; path = LPDCollectionViewKit/Classes/LPDCollectionView.h; sourceTree = "<group>"; };
@@ -1424,7 +1424,7 @@
 		BB7EFCBE1E78F2611E869AFB8649361E /* RACUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACUnit.m; path = ReactiveObjC/RACUnit.m; sourceTree = "<group>"; };
 		BB7F7F7648532B8F0D62AD4A568E2695 /* RACUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACUnit.h; path = ReactiveObjC/RACUnit.h; sourceTree = "<group>"; };
 		BBC411BE4A219289836624B086BC878C /* NSObject+RACPropertySubscribing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACPropertySubscribing.h"; path = "ReactiveObjC/NSObject+RACPropertySubscribing.h"; sourceTree = "<group>"; };
-		BC686E54E05B028A9AABA88478D96916 /* LPDTableViewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LPDTableViewKit.framework; path = LPDTableViewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC686E54E05B028A9AABA88478D96916 /* LPDTableViewKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LPDTableViewKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE286027E3E076C2BC2D370676019B9 /* NSMutableArray+LPDQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+LPDQueue.h"; path = "LPDAdditionsKit/Classes/NSMutableArray+LPDQueue.h"; sourceTree = "<group>"; };
 		BCE7032B0185017B737C81BFD7387700 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		BD1319B6D0AB6684A80655467693EBE0 /* LPDLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDLabel.h; path = LPDAdditionsKit/Classes/LPDLabel.h; sourceTree = "<group>"; };
@@ -1503,8 +1503,8 @@
 		D8C918AE5F333C5511EB9F45DF8AA946 /* UIControl+Block.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+Block.m"; path = "LPDAdditionsKit/Classes/UIControl+Block.m"; sourceTree = "<group>"; };
 		D9670AA6AC4E143A20DFF85E481B1811 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		D9881BC57491170604161AC11DF16F75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9C87A85470E0CC60742833E37A5C40C /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYModel.framework; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA260F245F6FF9B80C6737E3212AD913 /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACSignalProvider.d; path = ReactiveObjC/RACSignalProvider.d; sourceTree = "<group>"; };
+		D9C87A85470E0CC60742833E37A5C40C /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA260F245F6FF9B80C6737E3212AD913 /* RACSignalProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.dtrace; name = RACSignalProvider.d; path = ReactiveObjC/RACSignalProvider.d; sourceTree = "<group>"; };
 		DA4D5C2A1C2C5F7F4C4D7903123433D9 /* RACIndexSetSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACIndexSetSequence.h; path = ReactiveObjC/RACIndexSetSequence.h; sourceTree = "<group>"; };
 		DA53FAF0C8F3C14197F83ED42CC6E7FE /* UIDatePicker+RACSignalSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDatePicker+RACSignalSupport.m"; path = "ReactiveObjC/UIDatePicker+RACSignalSupport.m"; sourceTree = "<group>"; };
 		DA7A3DA29B13BE866F4D51389C0B584D /* UIView+LPDBorders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+LPDBorders.m"; path = "LPDAdditionsKit/Classes/UIView+LPDBorders.m"; sourceTree = "<group>"; };
@@ -1527,10 +1527,10 @@
 		E065DFEC64841DEFB8354597DECC6F7C /* SDVersion-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDVersion-umbrella.h"; sourceTree = "<group>"; };
 		E0B335386BDF08D59B55ACDDEA978503 /* RACEXTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACEXTScope.h; path = ReactiveObjC/extobjc/RACEXTScope.h; sourceTree = "<group>"; };
 		E0BE2D9FE7EAFFFE3C6E18B3006BC3F4 /* NSNotificationCenter+RACSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+RACSupport.m"; path = "ReactiveObjC/NSNotificationCenter+RACSupport.m"; sourceTree = "<group>"; };
-		E0E860D1753FE4A08D303467BAAFD906 /* LPDAdditionsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LPDAdditionsKit.framework; path = LPDAdditionsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E860D1753FE4A08D303467BAAFD906 /* LPDAdditionsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LPDAdditionsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F2683AD600917F5E2C0269B80F364A /* NSObject+RACDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+RACDescription.h"; path = "ReactiveObjC/NSObject+RACDescription.h"; sourceTree = "<group>"; };
 		E173121777ECD7CE43C51FE7D88F7787 /* MJRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeader.m; path = MJRefresh/Base/MJRefreshHeader.m; sourceTree = "<group>"; };
-		E22CB59A3F5FC5168B2FE75EFB474ECE /* LPDNetworkingKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LPDNetworkingKit.modulemap; sourceTree = "<group>"; };
+		E22CB59A3F5FC5168B2FE75EFB474ECE /* LPDNetworkingKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LPDNetworkingKit.modulemap; sourceTree = "<group>"; };
 		E2BDACFCDC881D5F9A71FCA131103F1F /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
 		E3554061CD431E930FCD32878F495791 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37989E27C99A07A895B2F5F3025BCCC /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
@@ -1553,9 +1553,9 @@
 		E8B899ABBB09B96FB53BBF5E41A30722 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		E8BB08C76DD5C814E617120970F84F85 /* NSMutableArray+LPDStack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+LPDStack.m"; path = "LPDAdditionsKit/Classes/NSMutableArray+LPDStack.m"; sourceTree = "<group>"; };
 		EA45D6203E59FBA85B1EF5CD1A31AF2A /* NSNotificationCenter+RACSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+RACSupport.h"; path = "ReactiveObjC/NSNotificationCenter+RACSupport.h"; sourceTree = "<group>"; };
-		EA9418042B1E3D6C6E056A4CA9D34E07 /* RACCompoundDisposableProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; name = RACCompoundDisposableProvider.d; path = ReactiveObjC/RACCompoundDisposableProvider.d; sourceTree = "<group>"; };
+		EA9418042B1E3D6C6E056A4CA9D34E07 /* RACCompoundDisposableProvider.d */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.dtrace; name = RACCompoundDisposableProvider.d; path = ReactiveObjC/RACCompoundDisposableProvider.d; sourceTree = "<group>"; };
 		EAC25C62266C6101BD8FB381574F5541 /* RACMulticastConnection+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RACMulticastConnection+Private.h"; path = "ReactiveObjC/RACMulticastConnection+Private.h"; sourceTree = "<group>"; };
-		EAD4E38B8D6DA8D98B790D7A7CBE0809 /* ReactiveObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReactiveObjC.framework; path = ReactiveObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD4E38B8D6DA8D98B790D7A7CBE0809 /* ReactiveObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF5F2BD58EA6CC871645128535BA190 /* RACQueueScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACQueueScheduler.h; path = ReactiveObjC/RACQueueScheduler.h; sourceTree = "<group>"; };
 		EAF7DF40E586C7AE4925751A56463E78 /* LPDCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDCollectionViewCell.m; path = LPDCollectionViewKit/Classes/LPDCollectionViewCell.m; sourceTree = "<group>"; };
 		EBC178BBCCC046A72650978FA34952B6 /* LPDNavigationControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDNavigationControllerProtocol.h; path = LPDMvvmKit/Classes/ViewControllers/LPDNavigationControllerProtocol.h; sourceTree = "<group>"; };
@@ -1578,7 +1578,7 @@
 		F68D54F8B0C82A4F4164163F3069DA70 /* LPDViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDViewModel.m; path = LPDMvvmKit/Classes/ViewModels/LPDViewModel.m; sourceTree = "<group>"; };
 		F6D4A4BCBD315C6334938944717BCE5D /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		F6ED17FD51BA80FC0C065D4A8A48CCA4 /* LPDNetworkingKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPDNetworkingKit.xcconfig; sourceTree = "<group>"; };
-		F6F38AA55548C1D534C343D4D537F843 /* Pods-LPDMvvmRouterKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LPDMvvmRouterKit_Tests.modulemap"; sourceTree = "<group>"; };
+		F6F38AA55548C1D534C343D4D537F843 /* Pods-LPDMvvmRouterKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LPDMvvmRouterKit_Tests.modulemap"; sourceTree = "<group>"; };
 		F705B0712AC289E3A795FE55066B7AD3 /* LPDCollectionViewModelProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDCollectionViewModelProtocol.h; path = LPDCollectionViewKit/Classes/LPDCollectionViewModelProtocol.h; sourceTree = "<group>"; };
 		F795BF7F08790E3ADF15AA0CC907E3A0 /* LKPropertyHook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKPropertyHook.h; path = LPDNetworkingKit/Classes/LKUserDefaults/LKPropertyHook.h; sourceTree = "<group>"; };
 		F7C456F540618E8D1473404EC3DD7478 /* LPDSystemAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPDSystemAlertView.m; path = LPDControlsKit/Classes/LPDAlertView/LPDSystemAlertView.m; sourceTree = "<group>"; };
@@ -1598,7 +1598,7 @@
 		FC163C83E3635351AE210BD48F97C3B6 /* RACDynamicSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RACDynamicSignal.h; path = ReactiveObjC/RACDynamicSignal.h; sourceTree = "<group>"; };
 		FC2EB25A7E0C558E072D99775F5C6440 /* LPDSystemAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPDSystemAlertView.h; path = LPDControlsKit/Classes/LPDAlertView/LPDSystemAlertView.h; sourceTree = "<group>"; };
 		FD58CB7FEB90952BC39142B05C1CDE6B /* RACEmptySignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RACEmptySignal.m; path = ReactiveObjC/RACEmptySignal.m; sourceTree = "<group>"; };
-		FDB2EB6F34927D7E29A945D3A7703BFE /* LPDControlsKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LPDControlsKit.modulemap; sourceTree = "<group>"; };
+		FDB2EB6F34927D7E29A945D3A7703BFE /* LPDControlsKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LPDControlsKit.modulemap; sourceTree = "<group>"; };
 		FE6C7E0DDC203CC5C29E962DDE3C2FCB /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoNormalFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
 		FEF3554DFAE1BD20451038085736194B /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		FEF92A65B69339AE2912FE399241A911 /* UIView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MJExtension.h"; path = "MJRefresh/UIView+MJExtension.h"; sourceTree = "<group>"; };
@@ -1856,7 +1856,6 @@
 				E878E30102F3EE433201223D7FAFC69D /* LPDTableViewProtocol.h */,
 				05CA9F5CD127C699AFAEE63FD0523F83 /* Support Files */,
 			);
-			name = LPDTableViewKit;
 			path = LPDTableViewKit;
 			sourceTree = "<group>";
 		};
@@ -1922,7 +1921,6 @@
 				15F89215C6A7B13280EF44B56A4954C1 /* UIViewController+LPDFinder.h */,
 				A6ABD1C2482E694CE5888C675BFF3E86 /* UIViewController+LPDFinder.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -2131,7 +2129,6 @@
 				1E2DE0DA88ACDA410D13E306988D4457 /* UITextView+RACSignalSupport.m */,
 				767F1367CF45A0251233F1016A271EE2 /* Support Files */,
 			);
-			name = ReactiveObjC;
 			path = ReactiveObjC;
 			sourceTree = "<group>";
 		};
@@ -2177,7 +2174,6 @@
 			children = (
 				4A47518EB3D9FBD42BA10BA7B6C7D910 /* Classes */,
 			);
-			name = LPDMvvmRouterKit;
 			path = LPDMvvmRouterKit;
 			sourceTree = "<group>";
 		};
@@ -2259,7 +2255,6 @@
 				62EBBC5456A7C69615C489B87A7495C1 /* UITextField+LPDRACSignal.m */,
 				126A8483A313A4796F655B0E8F77C219 /* Support Files */,
 			);
-			name = LPDMvvmKit;
 			path = LPDMvvmKit;
 			sourceTree = "<group>";
 		};
@@ -2291,7 +2286,6 @@
 				A4FE7F0D1969E2A31B33CAC0A2C9374B /* NSArray+LPDModel.m */,
 				5C7DEC457A36872CD2D123E6864DA36B /* Support Files */,
 			);
-			name = LPDNetworkingKit;
 			path = LPDNetworkingKit;
 			sourceTree = "<group>";
 		};
@@ -2322,7 +2316,6 @@
 				FFA6063031AED0A87EBDDFDE99BC6D31 /* YYModel.h */,
 				3BF2278FDE334C27CB276FCFB6793B53 /* Support Files */,
 			);
-			name = YYModel;
 			path = YYModel;
 			sourceTree = "<group>";
 		};
@@ -2509,7 +2502,6 @@
 				6A42B329E6EAAA5010BF69C5271DDE24 /* LPDCollectionViewProtocol.h */,
 				B411919B216C1900A67FACD7797BBF8D /* Support Files */,
 			);
-			name = LPDCollectionViewKit;
 			path = LPDCollectionViewKit;
 			sourceTree = "<group>";
 		};
@@ -2639,7 +2631,6 @@
 				05199A2E5226A30E094044BEFF7B9187 /* Resources */,
 				089C9B7FD4E462CBA5DE319587A5EA5C /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -2654,7 +2645,6 @@
 				5ABFBBB8BE6DAE38D8D35234B70DB12F /* Support Files */,
 				772DA8306EE617B7C0BC77186A5422CD /* UIKit */,
 			);
-			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -2666,7 +2656,6 @@
 				E4C857E66248B6B05CB57D8EB7962624 /* SDVersion.h */,
 				53B5AE64E53C0DCC5474CD19DDAE2E1E /* Support Files */,
 			);
-			name = SDVersion;
 			path = SDVersion;
 			sourceTree = "<group>";
 		};
@@ -2728,7 +2717,6 @@
 				A0408DE0C4F4DB74B8FEE66AA9300594 /* UIView+LPDFindSubView.m */,
 				7A2ECB9EEEB2B6FA0BFC23FA2C05C517 /* Support Files */,
 			);
-			name = LPDAdditionsKit;
 			path = LPDAdditionsKit;
 			sourceTree = "<group>";
 		};
@@ -2776,7 +2764,6 @@
 				DAA53CF7F2AA7787FF1747D7B65B76B5 /* ViewController+MASAdditions.m */,
 				E8D78312F558B198A210F1F95FBDFA86 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -2807,7 +2794,6 @@
 				059B0D43AAF464BE00B93F7CE9ADDA76 /* NSMutableAttributedString+LPDCheck.m */,
 				86AD6E05540C72175DC48FE0A2B1102A /* Support Files */,
 			);
-			name = LPDControlsKit;
 			path = LPDControlsKit;
 			sourceTree = "<group>";
 		};
@@ -2827,9 +2813,9 @@
 				AD158C4352126F89720AF87D9B621500 /* LPDMvvmRouterKit-umbrella.h in Headers */,
 				EAF423AA8C40E98E585643801E39F753 /* LPDMvvmRouterKit.h in Headers */,
 				A68004CB6E39E69EE6F016053210CB49 /* LPDRouteURL.h in Headers */,
+				3EB07D15D75058C12D9FB3FC137D8F53 /* UIViewController+LPDFinder.h in Headers */,
 				6047FAC6890AFF37523A908661C49B4C /* LPDRuntime.h in Headers */,
 				1A3157DF17CAC849056058153B0BBE76 /* NSObject+LPDPerformAction.h in Headers */,
-				3EB07D15D75058C12D9FB3FC137D8F53 /* UIViewController+LPDFinder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

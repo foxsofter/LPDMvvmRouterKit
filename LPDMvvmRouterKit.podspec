@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LPDMvvmRouterKit'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'A short description of LPDMvvmRouterKit.'
 
 # This description is used to generate tags and improve search results.
@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-    s.private_header_files = 'LPDMvvmRouterKit/Classes/NSObject+LPDPerformAction.h', 'LPDMvvmRouterKit/Classes/UIViewController+LPDFinder.h'
+    s.private_header_files = 'LPDMvvmRouterKit/Classes/NSObject+LPDPerformAction.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'LPDMvvmKit'
