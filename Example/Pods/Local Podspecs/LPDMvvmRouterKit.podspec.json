@@ -1,6 +1,6 @@
 {
   "name": "LPDMvvmRouterKit",
-  "version": "0.1.9",
+  "version": "0.2.2",
   "summary": "A short description of LPDMvvmRouterKit.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/LPD-iOS/LPDMvvmRouterKit",
@@ -13,19 +13,16 @@
   },
   "source": {
     "git": "https://github.com/LPD-iOS/LPDMvvmRouterKit.git",
-    "tag": "0.1.9"
+    "tag": "0.2.2"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "LPDMvvmRouterKit/Classes/**/*",
-  "private_header_files": [
-    "LPDMvvmRouterKit/Classes/NSObject+LPDPerformAction.h",
-    "LPDMvvmRouterKit/Classes/UIViewController+LPDFinder.h"
-  ],
+  "private_header_files": "LPDMvvmRouterKit/Classes/NSObject+LPDPerformAction.h",
   "dependencies": {
     "LPDMvvmKit": [
-      "~> 0.9.8"
+
     ]
   }
 }

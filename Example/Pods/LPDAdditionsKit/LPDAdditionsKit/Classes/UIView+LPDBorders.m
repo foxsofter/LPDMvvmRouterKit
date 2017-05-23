@@ -236,7 +236,7 @@
 }
 
 - (NSArray<NSNumber *> *)lineDashPattern {
-  [self object:@selector(setLineDashPattern:)];
+  return [self object:@selector(setLineDashPattern:)];
 }
 
 @end

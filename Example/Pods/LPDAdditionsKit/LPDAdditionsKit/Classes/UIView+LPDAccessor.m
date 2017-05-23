@@ -161,7 +161,7 @@
 }
 
 - (CGFloat)right {
-  return (self.frame.origin.x + self.frame.size.width) - (self.bounds.origin.x + self.bounds.size.width);
+  return (self.frame.origin.x + self.frame.size.width);
 }
 
 - (void)setRight:(CGFloat)right {
@@ -171,7 +171,7 @@
 }
 
 - (CGFloat)bottom {
-  return (self.frame.origin.y + self.frame.size.height) - (self.bounds.origin.y + self.bounds.size.height);
+  return (self.frame.origin.y + self.frame.size.height);
 }
 
 - (void)setBottom:(CGFloat)bottom {

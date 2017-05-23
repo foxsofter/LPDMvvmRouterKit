@@ -184,7 +184,7 @@ NS_ASSUME_NONNULL_BEGIN
       NSRange matchRange = [regex rangeOfFirstMatchInString:endpoint options:NSMatchingReportProgress range:NSMakeRange(0, endpoint.length)];
       if (matchRange.location != NSNotFound) {
         cls = obj;
-        stop = YES;
+        *stop = YES;
       }
     }
   }];
