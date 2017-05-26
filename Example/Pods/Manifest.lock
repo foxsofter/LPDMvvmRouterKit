@@ -29,9 +29,9 @@ PODS:
     - LPDTableViewKit
     - MJRefresh
     - ReactiveObjC
-  - LPDMvvmRouterKit (0.2.2):
+  - LPDMvvmRouterKit (0.2.4):
     - LPDMvvmKit
-  - LPDNetworkingKit (0.2.5):
+  - LPDNetworkingKit (0.2.6):
     - AFNetworking
     - ReactiveObjC
     - YYModel
@@ -58,8 +58,8 @@ SPEC CHECKSUMS:
   LPDCollectionViewKit: 3dd9cef6c6066e2017d07a6985d9ee6f948d1f96
   LPDControlsKit: ebecd7e975838d20c749274cac5f89855af71ec6
   LPDMvvmKit: a66d37207551ffdb345ac326f47e1d222708318b
-  LPDMvvmRouterKit: 5494bed6d1b2dad99e59dd798754a6aa8e403496
-  LPDNetworkingKit: a90da8709d92edd6fb5e628349764bd2cf8e243c
+  LPDMvvmRouterKit: 5af5b03495f94a2e7596cd350d811c9571694871
+  LPDNetworkingKit: e83086a6566d7fb2d3e876ff8a387d052029cf45
   LPDTableViewKit: 140bf3597299110fdd6506288573f2f8c25d505e
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806

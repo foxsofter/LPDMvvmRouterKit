@@ -22,4 +22,4 @@ FOUNDATION_EXPORT const unsigned char LPDMvvmRouterVersionString[];
 #import "LPDEvent.h"
 #import "LPDModuleProtocol.h"
 #import "LPDRouteURL.h"
-#import "UIViewController+LPDFinder"
+#import "UIViewController+LPDFinder.h"
