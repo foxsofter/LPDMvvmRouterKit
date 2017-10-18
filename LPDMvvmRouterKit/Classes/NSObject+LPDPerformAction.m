@@ -16,7 +16,7 @@ static inline void getTypeValueByNSValue(NSValue *inValue, const char *typeCode,
 
 @implementation NSObject (LPDPerformAction)
 
-- (BOOL)performAction:(NSString *)actionName
+- (void)performAction:(NSString *)actionName
            parameters:(nullable NSDictionary *)parameters
            completion:(void (^ __nullable)(__nullable id))completion {
   
