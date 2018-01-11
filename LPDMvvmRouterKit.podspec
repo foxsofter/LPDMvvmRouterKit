@@ -1,24 +1,10 @@
-#
-# Be sure to run `pod lib lint LPDMvvmRouterKit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'LPDMvvmRouterKit'
-  s.version          = '0.2.7'
-  s.summary          = 'A short description of LPDMvvmRouterKit.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '0.2.8'
+  s.summary          = 'An elegent router kit for iOS.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+LPDMvvmRouterKit is written in a Objectivec-C, available under the MVVM framework.
                        DESC
 
   s.homepage         = 'https://github.com/LPD-iOS/LPDMvvmRouterKit'
