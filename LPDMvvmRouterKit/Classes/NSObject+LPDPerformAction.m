@@ -149,10 +149,14 @@ static inline void getTypeValueByNSValue(NSValue *inValue, const char *typeCode,
           object_setIvar(self, ivars[i], ivarValue);
         } else if ([[NSString stringWithUTF8String:ivarType] containsString:@"NSString"]) {
           object_setIvar(self, ivars[i], ivarValue);
-        } else if (strlen(ivarType) == 1 && isCharArrayContains(ivarType, cNumberTypes)) {
-          NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-          NSNumber *numberValue = [formatter numberFromString:ivarValue];
-          [self setValue:numberValue forKey:key];
+        } else if (strlen(cNumberTypes) == 1 && isCharArrayContains(ivarType, cNumberTypes)) {
+            if ([ivarValue isKindOfClass:[NSNumber class]]) {
+                [self setValue:ivarValue forKey:key];
+            } else {
+                NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+                NSNumber *numberValue = [formatter numberFromString:ivarValue];
+                [self setValue:numberValue forKey:key];
+            }
         } else {
           object_setIvar(self, ivars[i], ivarValue);
         }
